@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "time_dimension.schema.json",
+  "title": "Time Dimension",
+  "description": "Calendar time hierarchy: centuries, years, months, quarters, weeks, days — supports Gregorian, Jalali, and Lunar calendars",
+  "type": "object",
+  "properties": {
+    "time_dimension_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Display name of this time period"
+    },
+    "after_origin": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether this period is after the calendar origin (CE/AD vs BCE/BC)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of this time period"
+    },
+    "century_value": {
+      "type": "integer",
+      "description": "Century number"
+    },
+    "year_value": {
+      "type": "integer",
+      "description": "Year number"
+    },
+    "month_value": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Month number (1-12)"
+    },
+    "day_value": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 31,
+      "description": "Day of month (1-31)"
+    },
+    "day_of_week_value": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6,
+      "description": "Day of week (0=Monday, 6=Sunday in Jalali; varies by calendar)"
+    },
+    "date_value": {
+      "type": "string",
+      "format": "date",
+      "description": "Date value representing middle of this period"
+    },
+    "datetime_value": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Datetime value representing middle of this period"
+    },
+    "calendar_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["GRG", "JAL", "LUN"],
+      "description": "Calendar type: GRG=Gregorian, JAL=Jalali, LUN=Lunar"
+    },
+    "time_dimension_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["CEN", "YEA", "MON", "QRT", "WEE", "DAY"],
+      "description": "Time dimension type: CEN=Century, YEA=Year, MON=Month, QRT=Quarter, WEE=Week, DAY=Day"
+    },
+    "parent_time_dimension_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to parent time_dimension (e.g. year → century, month → year, day → month)"
+    }
+  },
+  "required": [
+    "time_dimension_uid",
+    "name",
+    "calendar_type_code",
+    "time_dimension_type_code"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "measure_kind.schema.json",
+  "title": "Measure Kind",
+  "description": "Definition of a measurement type — its unit, value type, and optional currency",
+  "type": "object",
+  "properties": {
+    "measure_kind_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Name of the measure"
+    },
+    "alt_name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name / abbreviation"
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 50,
+      "description": "Unit of measurement (e.g. PERCENT, IRRR, USD, PERSON)"
+    },
+    "unit_coefficient": {
+      "type": "integer",
+      "default": 1,
+      "description": "Multiplier for unit conversion (e.g. 1000 for thousands)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the measure"
+    },
+    "value_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["DEC", "FLT"],
+      "description": "Value storage type: DEC=Decimal, FLT=Float"
+    },
+    "currency_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["IIR", "USD"],
+      "description": "Currency type: IIR=Iranian Rial, USD=US Dollar"
+    }
+  },
+  "required": [
+    "measure_kind_uid",
+    "name",
+    "alt_name",
+    "value_type_code"
+  ],
+  "additionalProperties": false
+}

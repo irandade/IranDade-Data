@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "concept.schema.json",
+  "title": "Concept",
+  "description": "A hierarchical classification system: Cluster → Domain → Subdomain → Topic → Indicator",
+  "type": "object",
+  "properties": {
+    "concept_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Primary name of the concept"
+    },
+    "alt_name1": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name / abbreviation"
+    },
+    "alt_name2": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name / English equivalent"
+    },
+    "alt_name3": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name / code"
+    },
+    "level_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["CLS", "DOM", "SDO", "TOP"],
+      "description": "Hierarchy level: CLS=Cluster, DOM=Domain, SDO=Subdomain, TOP=Topic"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the concept"
+    },
+    "parent_concept_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to parent concept (self-referencing hierarchy)"
+    }
+  },
+  "required": [
+    "concept_uid",
+    "name",
+    "level_type_code"
+  ],
+  "additionalProperties": false
+}

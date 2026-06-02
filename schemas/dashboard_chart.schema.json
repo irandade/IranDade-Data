@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "dashboard_chart.schema.json",
+  "title": "Dashboard-Chart Relationship",
+  "description": "Junction table linking dashboards to charts (many-to-many)",
+  "type": "object",
+  "properties": {
+    "dashboard_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to dashboard"
+    },
+    "chart_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to chart"
+    }
+  },
+  "required": [
+    "dashboard_uid",
+    "chart_uid"
+  ],
+  "additionalProperties": false
+}

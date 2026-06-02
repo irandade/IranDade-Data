@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "dimension_value.schema.json",
+  "title": "Dimension Value",
+  "description": "A specific value/category within a dimension kind (e.g. 'Male', 'Urban', 'Age 20-30')",
+  "type": "object",
+  "properties": {
+    "dimension_value_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Primary name of this dimension value"
+    },
+    "alt_name1": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name"
+    },
+    "alt_name2": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name"
+    },
+    "alt_name3": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Alternative name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of this dimension value"
+    },
+    "parent_dimension_value_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to parent dimension_value (self-referencing hierarchy)"
+    },
+    "dimension_kind_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to dimension_kind that this value belongs to"
+    }
+  },
+  "required": [
+    "dimension_value_uid",
+    "name",
+    "alt_name1",
+    "alt_name2",
+    "alt_name3",
+    "dimension_kind_uid"
+  ],
+  "additionalProperties": false
+}

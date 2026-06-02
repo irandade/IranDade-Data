@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "chart.schema.json",
+  "title": "Chart",
+  "description": "A chart/visualization of one or more indicators",
+  "type": "object",
+  "properties": {
+    "chart_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Chart name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Chart description"
+    }
+  },
+  "required": [
+    "chart_uid",
+    "name"
+  ],
+  "additionalProperties": false
+}

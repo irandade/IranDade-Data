@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "day_dimension.schema.json",
+  "title": "Day Dimension",
+  "description": "Atomic day-level entity joining Gregorian, Jalali, and Lunar calendar representations for every day",
+  "type": "object",
+  "properties": {
+    "day_dimension_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "grg_name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Gregorian date as display string"
+    },
+    "jal_name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Jalali date as display string"
+    },
+    "lun_name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Lunar date as display string"
+    },
+    "grg_century": {
+      "type": "integer",
+      "description": "Gregorian century"
+    },
+    "grg_year": {
+      "type": "integer",
+      "description": "Gregorian year"
+    },
+    "grg_month": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Gregorian month (1-12)"
+    },
+    "grg_day": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 31,
+      "description": "Gregorian day of month"
+    },
+    "grg_day_of_week": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6,
+      "description": "Gregorian day of week"
+    },
+    "jal_century": {
+      "type": "integer",
+      "description": "Jalali century"
+    },
+    "jal_year": {
+      "type": "integer",
+      "description": "Jalali year"
+    },
+    "jal_month": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Jalali month (1-12)"
+    },
+    "jal_day": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 31,
+      "description": "Jalali day of month"
+    },
+    "jal_day_of_week": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6,
+      "description": "Jalali day of week"
+    },
+    "date_value": {
+      "type": "string",
+      "format": "date",
+      "description": "The calendar date value"
+    },
+    "grg_month_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to time_dimension representing the Gregorian month"
+    },
+    "jal_month_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to time_dimension representing the Jalali month"
+    }
+  },
+  "required": [
+    "day_dimension_uid",
+    "grg_name"
+  ],
+  "additionalProperties": false
+}

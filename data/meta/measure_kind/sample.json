@@ -1,0 +1,14 @@
+{
+  "measure_kind": [
+    {
+      "measure_kind_uid": "0196e047-f843-7f85-93b6-9e0df2c2a920",
+      "name": "",
+      "alt_name": "",
+      "unit": "",
+      "unit_coefficient": 1,
+      "description": "",
+      "value_type_code": "DEC",
+      "currency_type_code": null
+    }
+  ]
+}

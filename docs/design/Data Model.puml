@@ -40,8 +40,10 @@ package Utils{
 
 
     enum   CurrencyType <<code>> #beige{
-        IIR
-        USD
+        IIR<IIR>
+
+        USD<USD>
+
 
     }
 
@@ -49,8 +51,9 @@ package Utils{
 
 
     enum ValueType <<code>> #beige{
-      DECIMAL
-      FLOAT
+       DECIMAL<DEC>
+       FLOAT<FLT>
+
     }
 
 
@@ -89,17 +92,19 @@ package "Meta Data" as metadata_package{
     }
 
     enum GeographyStateType <<code>> #beige{
-        STATE
-        PROVINCE
-        TERRITORY
+        PROVINCE<PRO>
+        TERRITORY<TRI>
+        STATE<STA>
+
 
     }
     enum GeographyDimType <<code>> #beige{
-        CONTINENT
-        COUNTRY
-        STATE
-        COUNTY
-        CITY
+
+        CONTINENT<CON>
+        COUNTRY<COU>
+        STATE<STA>
+        COUNTY<CTY>
+        CITY<CIT>
     }
 
     GeographyDimension "*"--"1" GeographyDimType : <<code>>
@@ -145,18 +150,23 @@ DayDimension "n" -- "0-1" TimeDimension : grg_month
 DayDimension "n" -- "0-1" TimeDimension : jal_month
 
     enum CalendarType <<code>> #beige{
-        LUNAR
-        GREGORIAN
-        JALALI
+
+        LUNAR<LUN>
+        GREGORIAN<GRG>
+        JALALI<JAL>
+
     }
 
     TimeDimension -- CalendarType : <<code>>
     enum TimeDimensionType <<code>> #beige{
-        YEAR
-        MONTH
-        QUARTER
-        WEEK
-        DAY
+
+
+        CENTURY<CEN>
+        YEAR<YEA>
+        MONTH<MON>
+        QUARTER<QRT>
+        WEEK<WEE>
+        DAY<DAY>
 
     }
 
@@ -168,15 +178,19 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
 
 
     enum ConceptLevelType <<code>> #beige{
-        CLUSTER
-        DOMAIN
-        SUBDOMAIN
-        TOPIC
-        INDICATOR
+        CLUSTER<CLS>
+        DOMAIN<DOM>
+        SUBDOMAIN<SDO>
+        TOPIC<TOP>
+
 
     }
 
-
+    ' Concept
+    ' A conceptual topic or subject area used to organize knowledge.
+    ' Concepts represent what is being studied or analyzed
+    ' levels are in ConceptLevelType
+    ' (e.g., Inflation, Unemployment, GDP, Poverty).
     class Concept  <<ManagerMixin>> #lightgreen{
         concept_uid : uuid
         created_at : datetime
@@ -191,6 +205,15 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
 
     Concept "n"--"0-1" Concept : parent/child
 
+    ' Dimension Kind
+    ' Defines a classification axis used to segment or analyze
+    ' measures.
+    ' Time  Dimensions exceptionally managed in DayDimension,TimeDimension
+    ' Geography  Dimensions exceptionally managed in GeographyDimension
+    ' Dimension kinds describe the type of breakdown, such as:
+    ' - Gender
+    ' - Age Group
+
 
     class DimensionKind  <<ManagerMixin>> #lightgreen{
         dimension_kind_uid : uuid
@@ -204,7 +227,18 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
     }
 
 
-
+    ' Dimension Value
+    ' A specific member of a dimension kind.
+    '
+    ' Dimension values provide the actual category used in a
+    ' measure breakdown.
+    '
+    ' Examples:
+    ' Dimension Kind: Geography
+    ' Values: Iran, Tehran Province, Isfahan Province
+    '
+    ' Dimension Kind: Gender
+    ' Values: Male, Female
     class DimensionValue  <<ManagerMixin>> #lightgreen{
         dimension_value_uid : uuid
         created_at : datetime
@@ -233,7 +267,17 @@ package "Data" as data_package{
 
 
 
-'main number value will stored here
+' Observation
+' A quantitative observation of an indicator for a specific
+' time period and dimensional context.
+'
+' A Observation contains the actual reported value together with
+' its unit, methodology, source, and dimensional breakdowns.
+'
+' Example:
+' Inflation Rate = 35.2%
+' Country = Iran
+' Year = 2024
     class Observation #skyblue {
       observation_uid : UUID
       decimal_value : decimal
@@ -243,15 +287,25 @@ package "Data" as data_package{
 
 
     enum ObservationsType <<code>> #beige{
-        FORMAL
-        SEMIFORMAL
-        INFORMAL
+        FORMAL<FRM>
+        SEMIFORMAL<SFM>
+
+        INFORMAL<INF>
 
     }
 
     Observation "*"-up-"1" ObservationsType : <<code>>
 
-'    set of observations
+' Indicator
+' A measurable statistical indicator associated with a concept.
+' Indicators define what is observed or reported and may
+' be represented by one or more measures over time.
+' list of data will be stored in observation
+'
+' Examples:
+' - Inflation Rate
+' - Unemployment Rate
+' - GDP Growth Rate
     class Indicator<<BE>> #skyblue{
         indicator_uid : uuid
         name : str
@@ -279,6 +333,6 @@ package "Data" as data_package{
 
 Observation "*" -up- "1" Indicator
 
-Indicator "*"--"1" Concept
+Indicator "*"--"*" Concept
 
 @enduml

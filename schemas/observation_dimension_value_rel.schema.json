@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "observation_dimension_value_rel.schema.json",
+  "title": "Observation-Dimension Value Relationship",
+  "description": "Junction table linking observations to dimension values (many-to-many)",
+  "type": "object",
+  "properties": {
+    "observation_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to observation"
+    },
+    "dimension_value_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to dimension_value"
+    }
+  },
+  "required": [
+    "observation_uid",
+    "dimension_value_uid"
+  ],
+  "additionalProperties": false
+}

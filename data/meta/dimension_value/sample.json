@@ -1,0 +1,184 @@
+{
+  "dimension_value": [
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6129d8194a1",
+      "dimension_kind_uid": "019e870b-daa0-76d8-9552-f5eeb406be58",
+      "name": "Male",
+      "alt_name1": "مرد",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت مرد"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6136e0e0fac",
+      "dimension_kind_uid": "019e870b-daa0-76d8-9552-f5eeb406be58",
+      "name": "Female",
+      "alt_name1": "زن",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت زن"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c614003bb0c3",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce91eb86f493",
+      "name": "Child",
+      "alt_name1": "کودک",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت زیر سن بزرگسالی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c615e2d4ec24",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce91eb86f493",
+      "name": "Adult",
+      "alt_name1": "بزرگسال",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت بزرگسال"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c616bc3b373f",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce922717077b",
+      "name": "Primary Education",
+      "alt_name1": "ابتدایی",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "تحصیلات ابتدایی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c617269f8b4d",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce922717077b",
+      "name": "Higher Education",
+      "alt_name1": "آموزش عالی",
+      "alt_name2": "دانشگاهی",
+      "alt_name3": "",
+      "description": "تحصیلات دانشگاهی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6182b74a2e5",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9391c0360d",
+      "name": "Single",
+      "alt_name1": "مجرد",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "افراد مجرد"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6198e289b8b",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9391c0360d",
+      "name": "Married",
+      "alt_name1": "متأهل",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "افراد متأهل"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61a9180d6b9",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce946891102f",
+      "name": "Employed",
+      "alt_name1": "شاغل",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "افراد شاغل"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61b9639a47d",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce946891102f",
+      "name": "Unemployed",
+      "alt_name1": "بیکار",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "افراد بیکار"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61c764b7084",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce95c8d507b0",
+      "name": "Agriculture",
+      "alt_name1": "کشاورزی",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "بخش کشاورزی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61dd0ec2f49",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce95c8d507b0",
+      "name": "Services",
+      "alt_name1": "خدمات",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "بخش خدمات"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61e366d1077",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce96244b09a2",
+      "name": "Low Income",
+      "alt_name1": "کم‌درآمد",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "گروه‌های کم‌درآمد"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c61fb04de642",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce96244b09a2",
+      "name": "High Income",
+      "alt_name1": "پردرآمد",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "گروه‌های پردرآمد"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c62005361929",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce97087f46ea",
+      "name": "Urban",
+      "alt_name1": "شهری",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت شهری"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c62180534154",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce97087f46ea",
+      "name": "Rural",
+      "alt_name1": "روستایی",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "جمعیت روستایی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6229208616d",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce98ea808393",
+      "name": "Managers",
+      "alt_name1": "مدیران",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "گروه شغلی مدیران"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c623f6c0d967",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce98ea808393",
+      "name": "Technicians",
+      "alt_name1": "تکنسین‌ها",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "گروه شغلی تکنسین‌ها"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c6242aefab8f",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9992e3b358",
+      "name": "Public",
+      "alt_name1": "دولتی",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "مالکیت دولتی"
+    },
+    {
+      "dimension_value_uid": "019e870f-b133-7061-ab34-c625c5a666ea",
+      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9992e3b358",
+      "name": "Private",
+      "alt_name1": "خصوصی",
+      "alt_name2": "",
+      "alt_name3": "",
+      "description": "مالکیت خصوصی"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "observation.schema.json",
+  "title": "Observation",
+  "description": "A single data point — a numeric value for an indicator at a point in time and place, measured in a specific measure kind",
+  "type": "object",
+  "properties": {
+    "observation_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "decimal_value": {
+      "type": "number",
+      "description": "Decimal value for high-precision measurements"
+    },
+    "float_value": {
+      "type": "number",
+      "description": "Floating-point value for approximate measurements"
+    },
+    "indicator_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to indicator this observation belongs to"
+    },
+    "measure_kind_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to measure_kind (unit of measurement)"
+    },
+    "observation_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["FRM", "SFM", "INF"],
+      "description": "Observation type: FRM=Formal, SFM=Semiformal, INF=Informal"
+    },
+    "geography_dimension_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to geography_dimension (location context)"
+    },
+    "time_dimension_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to time_dimension (time context)"
+    }
+  },
+  "required": [
+    "observation_uid",
+    "indicator_uid",
+    "measure_kind_uid",
+    "observation_type_code"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "dashboard.schema.json",
+  "title": "Dashboard",
+  "description": "A dashboard that groups multiple charts together",
+  "type": "object",
+  "properties": {
+    "dashboard_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Dashboard name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Dashboard description"
+    }
+  },
+  "required": [
+    "dashboard_uid"
+  ],
+  "additionalProperties": false
+}
