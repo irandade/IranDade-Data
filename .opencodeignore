@@ -1,0 +1,38 @@
+# --- Python & Environment ---
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.env.*
+!.env.example
+
+# --- Build & Dependency Managers ---
+# We want the agent to see pyproject.toml, but ignore the lock file if it's too large
+# uv.lock
+
+# --- Database & Storage ---
+*.sqlite
+*.db
+.redis/
+dump.rdb
+.venv
+
+# --- Logs & Performance ---
+*.log
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.behave_cache/
+
+# --- Documentation Artifacts ---
+# Ignore exported images from PlantUML, but keep the .puml files for the agent to read
+docs/design/*.png
+docs/design/*.svg
+docs/design/*.pdf
+
+# --- OS & IDE Files ---
+.DS_Store
+.idea/
+.vscode/
+

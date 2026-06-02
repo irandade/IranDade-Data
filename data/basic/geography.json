@@ -1,0 +1,2646 @@
+{
+  "continents": [
+    {
+      "uid": "019df753-5e15-7542-81c0-c387081f4f19",
+      "name_fa": "آفریقا",
+      "name_en": "Africa",
+      "description_fa": "قاره آفریقا",
+      "description_en": "African continent"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c3883773a9e9",
+      "name_fa": "جنوبگان",
+      "name_en": "Antarctica",
+      "description_fa": "قاره جنوبگان (قاره قطب جنوب)",
+      "description_en": "Antarctic continent"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c389975de37f",
+      "name_fa": "آسیا",
+      "name_en": "Asia",
+      "description_fa": "قاره آسیا",
+      "description_en": "Asian continent"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c38a6f4276e1",
+      "name_fa": "اروپا",
+      "name_en": "Europe",
+      "description_fa": "قاره اروپا",
+      "description_en": "European continent"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c38b71908300",
+      "name_fa": "آمریکای شمالی",
+      "name_en": "North America",
+      "description_fa": "قاره آمریکای شمالی",
+      "description_en": "North American continent"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c38c95584f8a",
+      "name_fa": "اقیانوسیه",
+      "name_en": "Oceania",
+      "description_fa": "قاره اقیانوسیه (استرالیا و جزایر اقیانوس آرام)",
+      "description_en": "Oceania continent (Australia and Pacific islands)"
+    },
+    {
+      "uid": "019df753-5e15-7542-81c0-c38d09301c51",
+      "name_fa": "آمریکای جنوبی",
+      "name_en": "South America",
+      "description_fa": "قاره آمریکای جنوبی",
+      "description_en": "South American continent"
+    }
+  ],
+  "countries": [
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0878c7070175",
+      "name_fa": "الجزایر",
+      "name_en": "Algeria",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0879e82bd055",
+      "name_fa": "آنگولا",
+      "name_en": "Angola",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087a48ab788b",
+      "name_fa": "بنین",
+      "name_en": "Benin",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087b03c430dc",
+      "name_fa": "بوتسوانا",
+      "name_en": "Botswana",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087cf4fe926c",
+      "name_fa": "بورکینافاسو",
+      "name_en": "Burkina Faso",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087dfb0d62a9",
+      "name_fa": "بوروندی",
+      "name_en": "Burundi",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087ef5a70d51",
+      "name_fa": "کیپ‌ورد",
+      "name_en": "Cabo Verde",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-087f33db0b2a",
+      "name_fa": "کامرون",
+      "name_en": "Cameroon",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0880d6e0b086",
+      "name_fa": "جمهوری آفریقای مرکزی",
+      "name_en": "Central African Republic",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08810751f602",
+      "name_fa": "چاد",
+      "name_en": "Chad",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088278d973fa",
+      "name_fa": "کومور",
+      "name_en": "Comoros",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08832b8955df",
+      "name_fa": "جمهوری دموکراتیک کنگو",
+      "name_en": "Congo (Democratic Republic)",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0884e1007813",
+      "name_fa": "کنگو",
+      "name_en": "Congo (Republic)",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0885489f120a",
+      "name_fa": "ساحل عاج",
+      "name_en": "Cote d'Ivoire",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088606542713",
+      "name_fa": "جیبوتی",
+      "name_en": "Djibouti",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0887e33fa9bf",
+      "name_fa": "مصر",
+      "name_en": "Egypt",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0888672d2a9d",
+      "name_fa": "گینه استوایی",
+      "name_en": "Equatorial Guinea",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0889b0d4cead",
+      "name_fa": "اریتره",
+      "name_en": "Eritrea",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088a9e145b70",
+      "name_fa": "اسواتینی",
+      "name_en": "Eswatini",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088bffebdac7",
+      "name_fa": "اتیوپی",
+      "name_en": "Ethiopia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088ccf4e9a10",
+      "name_fa": "گابن",
+      "name_en": "Gabon",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088de0903a52",
+      "name_fa": "گامبیا",
+      "name_en": "Gambia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088e83d7de91",
+      "name_fa": "غنا",
+      "name_en": "Ghana",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-088fd26b601f",
+      "name_fa": "گینه",
+      "name_en": "Guinea",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0890534726ef",
+      "name_fa": "گینه بیسائو",
+      "name_en": "Guinea-Bissau",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0891d17a6877",
+      "name_fa": "کنیا",
+      "name_en": "Kenya",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0892628b213d",
+      "name_fa": "لسوتو",
+      "name_en": "Lesotho",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0893d7205242",
+      "name_fa": "لیبریا",
+      "name_en": "Liberia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0894cbb0896b",
+      "name_fa": "لیبی",
+      "name_en": "Libya",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0895618b995a",
+      "name_fa": "ماداگاسکار",
+      "name_en": "Madagascar",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08965410ad3d",
+      "name_fa": "مالاوی",
+      "name_en": "Malawi",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089736d54548",
+      "name_fa": "مالی",
+      "name_en": "Mali",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-0898e802585f",
+      "name_fa": "موریتانی",
+      "name_en": "Mauritania",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08991eae175c",
+      "name_fa": "موریس",
+      "name_en": "Mauritius",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089a9ea88792",
+      "name_fa": "مراکش",
+      "name_en": "Morocco",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089b8efaee76",
+      "name_fa": "موزامبیک",
+      "name_en": "Mozambique",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089ccebf5e10",
+      "name_fa": "نامیبیا",
+      "name_en": "Namibia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089d218807d4",
+      "name_fa": "نیجر",
+      "name_en": "Niger",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089eef4dadb4",
+      "name_fa": "نیجریه",
+      "name_en": "Nigeria",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-089ff68fa8fe",
+      "name_fa": "رواندا",
+      "name_en": "Rwanda",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a098d1167a",
+      "name_fa": "سائوتومه و پرینسیپ",
+      "name_en": "Sao Tome and Principe",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a1b2b8a463",
+      "name_fa": "سنگال",
+      "name_en": "Senegal",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a28f17bf53",
+      "name_fa": "سیشل",
+      "name_en": "Seychelles",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a32f6b5535",
+      "name_fa": "سیرالئون",
+      "name_en": "Sierra Leone",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a4189a12bb",
+      "name_fa": "سومالی",
+      "name_en": "Somalia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a5812eb281",
+      "name_fa": "آفریقای جنوبی",
+      "name_en": "South Africa",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a6ff01b888",
+      "name_fa": "سودان جنوبی",
+      "name_en": "South Sudan",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a788777478",
+      "name_fa": "سودان",
+      "name_en": "Sudan",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a823bc9330",
+      "name_fa": "تانزانیا",
+      "name_en": "Tanzania",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08a9d847c94f",
+      "name_fa": "توگو",
+      "name_en": "Togo",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08aa82faa401",
+      "name_fa": "تونس",
+      "name_en": "Tunisia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ab2f550031",
+      "name_fa": "اوگاندا",
+      "name_en": "Uganda",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ac2a99f257",
+      "name_fa": "زامبیا",
+      "name_en": "Zambia",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ad7762d0c6",
+      "name_fa": "زیمبابوه",
+      "name_en": "Zimbabwe",
+      "continent_uid": "019df753-5e15-7542-81c0-c387081f4f19"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "name_fa": "افغانستان",
+      "name_en": "Afghanistan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "name_fa": "ارمنستان",
+      "name_en": "Armenia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "name_fa": "جمهوری آذربایجان",
+      "name_en": "Azerbaijan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b15b13f501",
+      "name_fa": "بحرین",
+      "name_en": "Bahrain",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b2e7a8f43a",
+      "name_fa": "بنگلادش",
+      "name_en": "Bangladesh",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b3d27733c7",
+      "name_fa": "بوتان",
+      "name_en": "Bhutan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b4476636be",
+      "name_fa": "برونئی",
+      "name_en": "Brunei",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b5c048475a",
+      "name_fa": "کامبوج",
+      "name_en": "Cambodia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b66d711242",
+      "name_fa": "چین",
+      "name_en": "China",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b70c3ed2e7",
+      "name_fa": "قبرس",
+      "name_en": "Cyprus",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b84964ab68",
+      "name_fa": "گرجستان",
+      "name_en": "Georgia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08b945fb2e90",
+      "name_fa": "هند",
+      "name_en": "India",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08baccf00316",
+      "name_fa": "اندونزی",
+      "name_en": "Indonesia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "name_fa": "ایران",
+      "name_en": "Iran",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "name_fa": "عراق",
+      "name_en": "Iraq",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08bdf8db7d81",
+      "name_fa": "اسرائیل",
+      "name_en": "Israel",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08bea2de8314",
+      "name_fa": "ژاپن",
+      "name_en": "Japan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08bf52ea423b",
+      "name_fa": "اردن",
+      "name_en": "Jordan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c0fc39c686",
+      "name_fa": "قزاقستان",
+      "name_en": "Kazakhstan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c1748027d9",
+      "name_fa": "کویت",
+      "name_en": "Kuwait",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c2b78cb862",
+      "name_fa": "قرقیزستان",
+      "name_en": "Kyrgyzstan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c3ca66d7e2",
+      "name_fa": "لائوس",
+      "name_en": "Laos",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c45c51ea22",
+      "name_fa": "لبنان",
+      "name_en": "Lebanon",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c55da3b925",
+      "name_fa": "مالزی",
+      "name_en": "Malaysia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c6295a30f7",
+      "name_fa": "مالدیو",
+      "name_en": "Maldives",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c7591fcb3c",
+      "name_fa": "مغولستان",
+      "name_en": "Mongolia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c83d55b9be",
+      "name_fa": "میانمار",
+      "name_en": "Myanmar",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08c956fd0f77",
+      "name_fa": "نپال",
+      "name_en": "Nepal",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08cae377b906",
+      "name_fa": "کره شمالی",
+      "name_en": "North Korea",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08cb2e567bfd",
+      "name_fa": "عمان",
+      "name_en": "Oman",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "name_fa": "پاکستان",
+      "name_en": "Pakistan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08cd17808487",
+      "name_fa": "فلسطین",
+      "name_en": "Palestine",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ce9473fc2f",
+      "name_fa": "فیلیپین",
+      "name_en": "Philippines",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08cf126713b1",
+      "name_fa": "قطر",
+      "name_en": "Qatar",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d08ccac255",
+      "name_fa": "روسیه",
+      "name_en": "Russia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d106c5b1d8",
+      "name_fa": "عربستان سعودی",
+      "name_en": "Saudi Arabia",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d295e7db04",
+      "name_fa": "سنگاپور",
+      "name_en": "Singapore",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d32e9cbed2",
+      "name_fa": "کره جنوبی",
+      "name_en": "South Korea",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d461db9fc6",
+      "name_fa": "سری‌لانکا",
+      "name_en": "Sri Lanka",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d5ef6c44bd",
+      "name_fa": "سوریه",
+      "name_en": "Syria",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d6404c4072",
+      "name_fa": "تایوان",
+      "name_en": "Taiwan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d7eab5e56a",
+      "name_fa": "تاجیکستان",
+      "name_en": "Tajikistan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d880d84852",
+      "name_fa": "تایلند",
+      "name_en": "Thailand",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08d95da8a532",
+      "name_fa": "تیمور شرقی",
+      "name_en": "Timor-Leste",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "name_fa": "ترکیه",
+      "name_en": "Turkey",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "name_fa": "ترکمنستان",
+      "name_en": "Turkmenistan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08dc9b8b8fba",
+      "name_fa": "امارات متحده عربی",
+      "name_en": "United Arab Emirates",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08dd43e2e24a",
+      "name_fa": "ازبکستان",
+      "name_en": "Uzbekistan",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08def2aa466b",
+      "name_fa": "ویتنام",
+      "name_en": "Vietnam",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08dfe7f02c8c",
+      "name_fa": "یمن",
+      "name_en": "Yemen",
+      "continent_uid": "019df753-5e15-7542-81c0-c389975de37f"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e0ee53d10d",
+      "name_fa": "آلبانی",
+      "name_en": "Albania",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e1e0f374ba",
+      "name_fa": "آندورا",
+      "name_en": "Andorra",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e2f15fb3f2",
+      "name_fa": "اتریش",
+      "name_en": "Austria",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e360ef72d3",
+      "name_fa": "بلاروس",
+      "name_en": "Belarus",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e4bda9d152",
+      "name_fa": "بلژیک",
+      "name_en": "Belgium",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e58af8c6e2",
+      "name_fa": "بوسنی و هرزگوین",
+      "name_en": "Bosnia and Herzegovina",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e63f9323b3",
+      "name_fa": "بلغارستان",
+      "name_en": "Bulgaria",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e7bd6ac192",
+      "name_fa": "کرواسی",
+      "name_en": "Croatia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e8bcd8ed12",
+      "name_fa": "جمهوری چک",
+      "name_en": "Czech Republic",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08e926ee2337",
+      "name_fa": "دانمارک",
+      "name_en": "Denmark",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08eac8d4f12d",
+      "name_fa": "استونی",
+      "name_en": "Estonia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08eb6a29b969",
+      "name_fa": "فنلاند",
+      "name_en": "Finland",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ec9d78d572",
+      "name_fa": "فرانسه",
+      "name_en": "France",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ede2b54436",
+      "name_fa": "آلمان",
+      "name_en": "Germany",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08eeba160267",
+      "name_fa": "یونان",
+      "name_en": "Greece",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08efe671fd61",
+      "name_fa": "مجارستان",
+      "name_en": "Hungary",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f07c3ed1e6",
+      "name_fa": "ایسلند",
+      "name_en": "Iceland",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f12a50d298",
+      "name_fa": "ایرلند",
+      "name_en": "Ireland",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f2c50fb720",
+      "name_fa": "ایتالیا",
+      "name_en": "Italy",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f35c08b752",
+      "name_fa": "کوزوو",
+      "name_en": "Kosovo",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f4e9e7340c",
+      "name_fa": "لتونی",
+      "name_en": "Latvia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f51f373fa2",
+      "name_fa": "لیختن‌اشتاین",
+      "name_en": "Liechtenstein",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f680420bbb",
+      "name_fa": "لیتوانی",
+      "name_en": "Lithuania",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f78d143e6d",
+      "name_fa": "لوکزامبورگ",
+      "name_en": "Luxembourg",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f89c5f9b82",
+      "name_fa": "مالت",
+      "name_en": "Malta",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08f93aa2422c",
+      "name_fa": "مولداوی",
+      "name_en": "Moldova",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08fa9e6e3626",
+      "name_fa": "موناکو",
+      "name_en": "Monaco",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08fbb9080877",
+      "name_fa": "مونته‌نگرو",
+      "name_en": "Montenegro",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08fc4927300b",
+      "name_fa": "هلند",
+      "name_en": "Netherlands",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08fd7b9765da",
+      "name_fa": "مقدونیه شمالی",
+      "name_en": "North Macedonia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08fe1015eaea",
+      "name_fa": "نروژ",
+      "name_en": "Norway",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd4-70d9-a87b-08ff6dc1782b",
+      "name_fa": "لهستان",
+      "name_en": "Poland",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b51b3e25731a",
+      "name_fa": "پرتغال",
+      "name_en": "Portugal",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b51c14c733f7",
+      "name_fa": "رومانی",
+      "name_en": "Romania",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b51db3c72deb",
+      "name_fa": "سان‌مارینو",
+      "name_en": "San Marino",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b51eda0be63a",
+      "name_fa": "صربستان",
+      "name_en": "Serbia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b51f4abb51c0",
+      "name_fa": "اسلواکی",
+      "name_en": "Slovakia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52096bcc1fc",
+      "name_fa": "اسلوونی",
+      "name_en": "Slovenia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52132347fb6",
+      "name_fa": "اسپانیا",
+      "name_en": "Spain",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b522d2049377",
+      "name_fa": "سوئد",
+      "name_en": "Sweden",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5237af3725c",
+      "name_fa": "سوئیس",
+      "name_en": "Switzerland",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52461aa77a3",
+      "name_fa": "اوکراین",
+      "name_en": "Ukraine",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b525eaf2a469",
+      "name_fa": "بریتانیا",
+      "name_en": "United Kingdom",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5260bae95ed",
+      "name_fa": "واتیکان",
+      "name_en": "Vatican City",
+      "continent_uid": "019df753-5e15-7542-81c0-c38a6f4276e1"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52730ebb7f7",
+      "name_fa": "آنتیگوا و باربودا",
+      "name_en": "Antigua and Barbuda",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b528992f5a50",
+      "name_fa": "باهاما",
+      "name_en": "Bahamas",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b529c6cca246",
+      "name_fa": "باربادوس",
+      "name_en": "Barbados",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52ae9294a02",
+      "name_fa": "بلیز",
+      "name_en": "Belize",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52bb745c19d",
+      "name_fa": "کانادا",
+      "name_en": "Canada",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52c9aba8379",
+      "name_fa": "کاستاریکا",
+      "name_en": "Costa Rica",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52d3d6ab54f",
+      "name_fa": "کوبا",
+      "name_en": "Cuba",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52e5c12c6c1",
+      "name_fa": "دومینیکا",
+      "name_en": "Dominica",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b52f59e05b18",
+      "name_fa": "جمهوری دومینیکن",
+      "name_en": "Dominican Republic",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53029247cbf",
+      "name_fa": "السالوادور",
+      "name_en": "El Salvador",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b531f8b1ef9d",
+      "name_fa": "گرنادا",
+      "name_en": "Grenada",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53296448356",
+      "name_fa": "گواتمالا",
+      "name_en": "Guatemala",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5331d170183",
+      "name_fa": "هائیتی",
+      "name_en": "Haiti",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b534c7f736e7",
+      "name_fa": "هندوراس",
+      "name_en": "Honduras",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53502a7cdff",
+      "name_fa": "جامائیکا",
+      "name_en": "Jamaica",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b536db64aa60",
+      "name_fa": "مکزیک",
+      "name_en": "Mexico",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b537aae006a3",
+      "name_fa": "نیکاراگوئه",
+      "name_en": "Nicaragua",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b538be145b6c",
+      "name_fa": "پاناما",
+      "name_en": "Panama",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b539ff5bf60e",
+      "name_fa": "سنت کیتس و نویس",
+      "name_en": "Saint Kitts and Nevis",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53a91a87634",
+      "name_fa": "سنت لوسیا",
+      "name_en": "Saint Lucia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53be49d19a8",
+      "name_fa": "سنت وینسنت و گرنادین‌ها",
+      "name_en": "Saint Vincent and the Grenadines",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53c13315cf1",
+      "name_fa": "ترینیداد و توباگو",
+      "name_en": "Trinidad and Tobago",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53dccfd8849",
+      "name_fa": "ایالات متحده آمریکا",
+      "name_en": "United States",
+      "continent_uid": "019df753-5e15-7542-81c0-c38b71908300"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53e1b46918f",
+      "name_fa": "آرژانتین",
+      "name_en": "Argentina",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b53f6cfd1782",
+      "name_fa": "بولیوی",
+      "name_en": "Bolivia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b540a12e5b60",
+      "name_fa": "برزیل",
+      "name_en": "Brazil",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5410cf700df",
+      "name_fa": "شیلی",
+      "name_en": "Chile",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5427526ed0c",
+      "name_fa": "کلمبیا",
+      "name_en": "Colombia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b543fcd37397",
+      "name_fa": "اکوادور",
+      "name_en": "Ecuador",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b544f0383249",
+      "name_fa": "گویان",
+      "name_en": "Guyana",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b545e7fbc65a",
+      "name_fa": "پاراگوئه",
+      "name_en": "Paraguay",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5467248c9d6",
+      "name_fa": "پرو",
+      "name_en": "Peru",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b547696d9e3d",
+      "name_fa": "سورینام",
+      "name_en": "Suriname",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b548dd400c45",
+      "name_fa": "اروگوئه",
+      "name_en": "Uruguay",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5490dad6e69",
+      "name_fa": "ونزوئلا",
+      "name_en": "Venezuela",
+      "continent_uid": "019df753-5e15-7542-81c0-c38d09301c51"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54a52453468",
+      "name_fa": "استرالیا",
+      "name_en": "Australia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54bb9082e96",
+      "name_fa": "فیجی",
+      "name_en": "Fiji",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54c60df5a3c",
+      "name_fa": "کیریباتی",
+      "name_en": "Kiribati",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54d69efc09b",
+      "name_fa": "جزایر مارشال",
+      "name_en": "Marshall Islands",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54e50384fc4",
+      "name_fa": "میکرونزی",
+      "name_en": "Micronesia",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b54fac597bd9",
+      "name_fa": "نائورو",
+      "name_en": "Nauru",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b550b856feeb",
+      "name_fa": "نیوزیلند",
+      "name_en": "New Zealand",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b551352bc49c",
+      "name_fa": "پالائو",
+      "name_en": "Palau",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b55277deea7d",
+      "name_fa": "پاپوآ گینه نو",
+      "name_en": "Papua New Guinea",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b553b9245c6b",
+      "name_fa": "ساموآ",
+      "name_en": "Samoa",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5540a8fe698",
+      "name_fa": "جزایر سلیمان",
+      "name_en": "Solomon Islands",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b555be5b8bb7",
+      "name_fa": "تونگا",
+      "name_en": "Tonga",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b5563b891b10",
+      "name_fa": "تووالو",
+      "name_en": "Tuvalu",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    },
+    {
+      "uid": "019df757-4fd5-71ea-9fc7-b557cc998c2a",
+      "name_fa": "وانواتو",
+      "name_en": "Vanuatu",
+      "continent_uid": "019df753-5e15-7542-81c0-c38c95584f8a"
+    }
+  ],
+  "states": [
+    {
+      "uid": "019df762-e799-77da-930d-1e3d1d143025",
+      "name_fa": "البرز",
+      "name_en": "Alborz",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e3eea3d2bbc",
+      "name_fa": "اردبیل",
+      "name_en": "Ardabil",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e3fd15934e2",
+      "name_fa": "بوشهر",
+      "name_en": "Bushehr",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4094c3e15a",
+      "name_fa": "چهارمحال و بختیاری",
+      "name_en": "Chaharmahal and Bakhtiari",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e414f9151de",
+      "name_fa": "آذربایجان شرقی",
+      "name_en": "East Azerbaijan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e425cf0a81a",
+      "name_fa": "فارس",
+      "name_en": "Fars",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e43e215c98d",
+      "name_fa": "گیلان",
+      "name_en": "Gilan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e445b4b6c50",
+      "name_fa": "گلستان",
+      "name_en": "Golestan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e45cf5be530",
+      "name_fa": "همدان",
+      "name_en": "Hamadan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e46e9e931a1",
+      "name_fa": "هرمزگان",
+      "name_en": "Hormozgan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4778643efc",
+      "name_fa": "ایلام",
+      "name_en": "Ilam",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4858f8774a",
+      "name_fa": "اصفهان",
+      "name_en": "Isfahan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e490c272e0f",
+      "name_fa": "کرمان",
+      "name_en": "Kerman",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4a5befb3ab",
+      "name_fa": "کرمانشاه",
+      "name_en": "Kermanshah",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4bfc9ea012",
+      "name_fa": "خوزستان",
+      "name_en": "Khuzestan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4c29f830c0",
+      "name_fa": "کهگیلویه و بویراحمد",
+      "name_en": "Kohgiluyeh and Boyer-Ahmad",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4d899f90cf",
+      "name_fa": "کردستان",
+      "name_en": "Kurdistan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4e3d7e8215",
+      "name_fa": "لرستان",
+      "name_en": "Lorestan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e4fe3337cdb",
+      "name_fa": "مرکزی",
+      "name_en": "Markazi",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e50840edba8",
+      "name_fa": "مازندران",
+      "name_en": "Mazandaran",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e51dc763c0a",
+      "name_fa": "خراسان شمالی",
+      "name_en": "North Khorasan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e52179cba64",
+      "name_fa": "قزوین",
+      "name_en": "Qazvin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e53565b7e44",
+      "name_fa": "قم",
+      "name_en": "Qom",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e540627e9f7",
+      "name_fa": "خراسان رضوی",
+      "name_en": "Razavi Khorasan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e553f289aa5",
+      "name_fa": "سمنان",
+      "name_en": "Semnan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e562a8aaaea",
+      "name_fa": "سیستان و بلوچستان",
+      "name_en": "Sistan and Baluchestan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e576a858f4c",
+      "name_fa": "خراسان جنوبی",
+      "name_en": "South Khorasan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e58b9f2a019",
+      "name_fa": "تهران",
+      "name_en": "Tehran",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e59df87a78e",
+      "name_fa": "آذربایجان غربی",
+      "name_en": "West Azerbaijan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5ab46dbbc9",
+      "name_fa": "یزد",
+      "name_en": "Yazd",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5bf2387c15",
+      "name_fa": "زنجان",
+      "name_en": "Zanjan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5cf1b08b22",
+      "name_fa": "بدخشان",
+      "name_en": "Badakhshan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5ddb994e1f",
+      "name_fa": "بادغیس",
+      "name_en": "Badghis",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5ecb061cae",
+      "name_fa": "بغلان",
+      "name_en": "Baghlan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e5fb17c1947",
+      "name_fa": "بلخ",
+      "name_en": "Balkh",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e60b423cb46",
+      "name_fa": "بامیان",
+      "name_en": "Bamyan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e61e6c6a253",
+      "name_fa": "دایکندی",
+      "name_en": "Daykundi",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e626c08b349",
+      "name_fa": "فراه",
+      "name_en": "Farah",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e63baf95ac6",
+      "name_fa": "فاریاب",
+      "name_en": "Faryab",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e64058e6695",
+      "name_fa": "غزنی",
+      "name_en": "Ghazni",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e657e087d5a",
+      "name_fa": "غور",
+      "name_en": "Ghor",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e66af210ce9",
+      "name_fa": "هلمند",
+      "name_en": "Helmand",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e671995e27c",
+      "name_fa": "هرات",
+      "name_en": "Herat",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e685d67ed75",
+      "name_fa": "جوزجان",
+      "name_en": "Jowzjan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e69298e7353",
+      "name_fa": "کابل",
+      "name_en": "Kabul",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6ab1eb190a",
+      "name_fa": "قندهار",
+      "name_en": "Kandahar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6b4e647628",
+      "name_fa": "کاپیسا",
+      "name_en": "Kapisa",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6cbf7b1253",
+      "name_fa": "خوست",
+      "name_en": "Khost",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6dcb5d3364",
+      "name_fa": "کنر",
+      "name_en": "Kunar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6e827d6df0",
+      "name_fa": "قندوز",
+      "name_en": "Kunduz",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e6fcb83f0d6",
+      "name_fa": "لغمان",
+      "name_en": "Laghman",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e70527df83e",
+      "name_fa": "لوگر",
+      "name_en": "Logar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e714d69ce3e",
+      "name_fa": "ننگرهار",
+      "name_en": "Nangarhar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e72c0372774",
+      "name_fa": "نیمروز",
+      "name_en": "Nimruz",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e732554c046",
+      "name_fa": "نورستان",
+      "name_en": "Nuristan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e740d7169e9",
+      "name_fa": "پکتیا",
+      "name_en": "Paktia",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7575c24ab7",
+      "name_fa": "پکتیکا",
+      "name_en": "Paktika",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e76106f9c5e",
+      "name_fa": "پنجشیر",
+      "name_en": "Panjshir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e77584114db",
+      "name_fa": "پروان",
+      "name_en": "Parwan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7876dae66e",
+      "name_fa": "سمنگان",
+      "name_en": "Samangan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e793c7a282e",
+      "name_fa": "سرپل",
+      "name_en": "Sar-e Pol",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7a0be79ce1",
+      "name_fa": "تخار",
+      "name_en": "Takhar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7b6b3f297e",
+      "name_fa": "اروزگان",
+      "name_en": "Urozgan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7c7a2dde3f",
+      "name_fa": "وردک",
+      "name_en": "Wardak",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7db30eea34",
+      "name_fa": "زابل",
+      "name_en": "Zabul",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ae19888a26",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7eacf290f5",
+      "name_fa": "آراگاتسوتن",
+      "name_en": "Aragatsotn",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e7fb82ba5c8",
+      "name_fa": "آرارات",
+      "name_en": "Ararat",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e80da988a89",
+      "name_fa": "آرماویر",
+      "name_en": "Armavir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e81e54166f6",
+      "name_fa": "گغارکونیک",
+      "name_en": "Gegharkunik",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8275dddd6a",
+      "name_fa": "کوتایک",
+      "name_en": "Kotayk",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8393109060",
+      "name_fa": "لوری",
+      "name_en": "Lori",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e84f63173a3",
+      "name_fa": "شیراک",
+      "name_en": "Shirak",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e852acb19b7",
+      "name_fa": "سیونیک",
+      "name_en": "Syunik",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e865e1536bf",
+      "name_fa": "تاووش",
+      "name_en": "Tavush",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e87e017b8d3",
+      "name_fa": "وایوتس دزور",
+      "name_en": "Vayots Dzor",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e88bd8f655d",
+      "name_fa": "ایروان",
+      "name_en": "Yerevan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08af1b2ca76b",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e89991d0606",
+      "name_fa": "آبشرون",
+      "name_en": "Absheron",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8a379bcfdc",
+      "name_fa": "گنجه-قزاق",
+      "name_en": "Ganja-Gazakh",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8b9ab35df2",
+      "name_fa": "شکی-زاقاتالا",
+      "name_en": "Shaki-Zagatala",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8cdb4c29d3",
+      "name_fa": "لنکران",
+      "name_en": "Lankaran",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8d31c395c1",
+      "name_fa": "قوبا-خاچماز",
+      "name_en": "Quba-Khachmaz",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e799-77da-930d-1e8e1b27504f",
+      "name_fa": "آران",
+      "name_en": "Aran",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cb7c92b4c41",
+      "name_fa": "کلبجر-لاچین",
+      "name_en": "Kalbajar-Lachin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cb860c65897",
+      "name_fa": "شیروان-سالیان",
+      "name_en": "Shirvan-Salyan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cb9d2f26175",
+      "name_fa": "باکو",
+      "name_en": "Baku",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cba1408dcaa",
+      "name_fa": "نخجوان",
+      "name_en": "Nakhchivan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cbb4f49b3eb",
+      "name_fa": "قوبا",
+      "name_en": "Guba",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cbc21901c47",
+      "name_fa": "شماخی",
+      "name_en": "Shamakhi",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cbde71d40c9",
+      "name_fa": "گنجه",
+      "name_en": "Ganja",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cbe760f88e3",
+      "name_fa": "مینگه‌چویر",
+      "name_en": "Mingachevir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08b03552578a",
+      "state_type": "TRI"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cbf46672ff1",
+      "name_fa": "بغداد",
+      "name_en": "Baghdad",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc041b5e0c7",
+      "name_fa": "صلاح‌الدین",
+      "name_en": "Saladin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc14d884083",
+      "name_fa": "دیاله",
+      "name_en": "Diyala",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc28c1f1c76",
+      "name_fa": "واسط",
+      "name_en": "Wasit",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc3d8568560",
+      "name_fa": "میسان",
+      "name_en": "Maysan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc4156c50d0",
+      "name_fa": "بصره",
+      "name_en": "Basra",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc5daefa854",
+      "name_fa": "ذی‌قار",
+      "name_en": "Dhi Qar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc64489c7eb",
+      "name_fa": "مثنی",
+      "name_en": "Muthanna",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc7a3497e33",
+      "name_fa": "قادسیه",
+      "name_en": "Qadisiyyah",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc843f85781",
+      "name_fa": "بابل",
+      "name_en": "Babil",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cc9bdc96574",
+      "name_fa": "کربلا",
+      "name_en": "Karbala",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cca85049e66",
+      "name_fa": "نجف",
+      "name_en": "Najaf",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ccb4bb30e72",
+      "name_fa": "انبار",
+      "name_en": "Anbar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ccc02113587",
+      "name_fa": "نینوا",
+      "name_en": "Nineveh",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ccdd40328c9",
+      "name_fa": "اربیل",
+      "name_en": "Erbil",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cce4ab49ecb",
+      "name_fa": "سلیمانیه",
+      "name_en": "Sulaymaniyah",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ccf87dc0854",
+      "name_fa": "دهوک",
+      "name_en": "Duhok",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd0eccfdd50",
+      "name_fa": "کرکوک",
+      "name_en": "Kirkuk",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd1c50dbda4",
+      "name_fa": "حلبچه",
+      "name_en": "Halabja",
+      "country_uid": "019df757-4fd4-70d9-a87b-08bc1438da93",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd20cbce6e8",
+      "name_fa": "بلوچستان",
+      "name_en": "Balochistan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd3b7791150",
+      "name_fa": "خیبر پختونخوا",
+      "name_en": "Khyber Pakhtunkhwa",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd441ae36e0",
+      "name_fa": "پنجاب",
+      "name_en": "Punjab",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd5d1335363",
+      "name_fa": "سند",
+      "name_en": "Sindh",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd66cbfc940",
+      "name_fa": "منطقه پایتختی اسلام‌آباد",
+      "name_en": "Islamabad Capital Territory",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd79bbed3b2",
+      "name_fa": "آزاد کشمیر",
+      "name_en": "Azad Kashmir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08ccb28c271a",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd84203af86",
+      "name_fa": "آدانا",
+      "name_en": "Adana",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cd91d0aedf8",
+      "name_fa": "آدی‌یامان",
+      "name_en": "Adiyaman",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cdabf978ffd",
+      "name_fa": "افیون قره‌حصار",
+      "name_en": "Afyonkarahisar",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cdb7a2a8de2",
+      "name_fa": "آغری",
+      "name_en": "Agri",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cdca64003b1",
+      "name_fa": "آق‌سرای",
+      "name_en": "Aksaray",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cddef22300f",
+      "name_fa": "آماسیه",
+      "name_en": "Amasya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cdeda7d795d",
+      "name_fa": "آنکارا",
+      "name_en": "Ankara",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cdfd1e16d6b",
+      "name_fa": "آنتالیا",
+      "name_en": "Antalya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce0d59cb95c",
+      "name_fa": "اردهان",
+      "name_en": "Ardahan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce162c505b1",
+      "name_fa": "آرتوین",
+      "name_en": "Artvin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce23c820bd4",
+      "name_fa": "آیدین",
+      "name_en": "Aydin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce359d76a5e",
+      "name_fa": "بالی‌کسیر",
+      "name_en": "Balikesir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce4af8a29d6",
+      "name_fa": "بارتین",
+      "name_en": "Bartin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce5d8c6898d",
+      "name_fa": "باتمان",
+      "name_en": "Batman",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce65c3603d1",
+      "name_fa": "بایبورت",
+      "name_en": "Bayburt",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce7579124a6",
+      "name_fa": "بیله‌جیک",
+      "name_en": "Bilecik",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce8fb394f24",
+      "name_fa": "بینگول",
+      "name_en": "Bingol",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ce961b96498",
+      "name_fa": "بتلیس",
+      "name_en": "Bitlis",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cea7795a5c7",
+      "name_fa": "بولو",
+      "name_en": "Bolu",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ceb05596ed0",
+      "name_fa": "بوردور",
+      "name_en": "Burdur",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cec837f5ad2",
+      "name_fa": "بورسا",
+      "name_en": "Bursa",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ced5aa6299e",
+      "name_fa": "چاناق‌قلعه",
+      "name_en": "Canakkale",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5ceec9e72f14",
+      "name_fa": "چانقری",
+      "name_en": "Cankiri",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cefb6e8456f",
+      "name_fa": "چوروم",
+      "name_en": "Corum",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf0193f2ff1",
+      "name_fa": "دنیزلی",
+      "name_en": "Denizli",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf149970e16",
+      "name_fa": "دیاربکر",
+      "name_en": "Diyarbakir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf29705457a",
+      "name_fa": "دوزجه",
+      "name_en": "Duzce",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf32b9961fe",
+      "name_fa": "ادرنه",
+      "name_en": "Edirne",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf4fd7af715",
+      "name_fa": "الازیغ",
+      "name_en": "Elazig",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf55e23fa9c",
+      "name_fa": "ارزنجان",
+      "name_en": "Erzincan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf69c3b97c3",
+      "name_fa": "ارزروم",
+      "name_en": "Erzurum",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf754b2d95d",
+      "name_fa": "اسکی‌شهر",
+      "name_en": "Eskisehir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf88266e725",
+      "name_fa": "غازی عینتاب",
+      "name_en": "Gaziantep",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cf9793be99a",
+      "name_fa": "گیرسون",
+      "name_en": "Giresun",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cfa0b73e503",
+      "name_fa": "گوموش‌خانه",
+      "name_en": "Gumushane",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cfbf8214a3e",
+      "name_fa": "حکاری",
+      "name_en": "Hakkari",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cfcca362256",
+      "name_fa": "ختای",
+      "name_en": "Hatay",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cfd12c6c580",
+      "name_fa": "ایغدیر",
+      "name_en": "Igdir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cfe1939d59a",
+      "name_fa": "اسپارتا",
+      "name_en": "Isparta",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5cff028ad0a4",
+      "name_fa": "استانبول",
+      "name_en": "Istanbul",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0050756278",
+      "name_fa": "ازمیر",
+      "name_en": "Izmir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d01d759d8d4",
+      "name_fa": "قهرمان‌مرعش",
+      "name_en": "Kahramanmaras",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0203d739e1",
+      "name_fa": "قره‌بوک",
+      "name_en": "Karabuk",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0354b4ac42",
+      "name_fa": "کارامان",
+      "name_en": "Karaman",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d047dac890b",
+      "name_fa": "قارص",
+      "name_en": "Kars",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d058d1a1704",
+      "name_fa": "کاستامونو",
+      "name_en": "Kastamonu",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d060162e485",
+      "name_fa": "قیصریه",
+      "name_en": "Kayseri",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d07e6bebb17",
+      "name_fa": "کیلیس",
+      "name_en": "Kilis",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d08b0739f60",
+      "name_fa": "کریک‌قلعه",
+      "name_en": "Kirikkale",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d09c98bced2",
+      "name_fa": "کرشهر",
+      "name_en": "Kirsehir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0ace99df8b",
+      "name_fa": "قوجاایلی",
+      "name_en": "Kocaeli",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0be059349c",
+      "name_fa": "قونیه",
+      "name_en": "Konya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0c4767a320",
+      "name_fa": "کوتاهیه",
+      "name_en": "Kutahya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0dd86270d9",
+      "name_fa": "ملطیه",
+      "name_en": "Malatya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0e38a73061",
+      "name_fa": "مانیسا",
+      "name_en": "Manisa",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d0ffd7ea180",
+      "name_fa": "ماردین",
+      "name_en": "Mardin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d10577817ad",
+      "name_fa": "مرسین",
+      "name_en": "Mersin",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d11565066a3",
+      "name_fa": "موغله",
+      "name_en": "Mugla",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d12f5b60b15",
+      "name_fa": "موش",
+      "name_en": "Mus",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d13f6da3286",
+      "name_fa": "نوشهر",
+      "name_en": "Nevsehir",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d14a6d3017f",
+      "name_fa": "نیغده",
+      "name_en": "Nigde",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d152af18d3c",
+      "name_fa": "اردو",
+      "name_en": "Ordu",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1648e3107d",
+      "name_fa": "عثمانیه",
+      "name_en": "Osmaniye",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d177699416f",
+      "name_fa": "ریزه",
+      "name_en": "Rize",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d18e0272e5e",
+      "name_fa": "سقاریه",
+      "name_en": "Sakarya",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d197e9001e2",
+      "name_fa": "سامسون",
+      "name_en": "Samsun",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1ab4e363f2",
+      "name_fa": "شانلی‌اورفه",
+      "name_en": "Sanliurfa",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1b1e4e22e2",
+      "name_fa": "سعرد",
+      "name_en": "Siirt",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1ce82c2ac2",
+      "name_fa": "سینوپ",
+      "name_en": "Sinop",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1d3f6728ab",
+      "name_fa": "شرناق",
+      "name_en": "Sirnak",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1eb6ad956d",
+      "name_fa": "سیواس",
+      "name_en": "Sivas",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d1f73a63840",
+      "name_fa": "تکیرداغ",
+      "name_en": "Tekirdag",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d20e80bc298",
+      "name_fa": "توقات",
+      "name_en": "Tokat",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d219b461c09",
+      "name_fa": "ترابزون",
+      "name_en": "Trabzon",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d22f2d94326",
+      "name_fa": "تونجلی",
+      "name_en": "Tunceli",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d23ba6fc98a",
+      "name_fa": "اوشاک",
+      "name_en": "Usak",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d24a6df56aa",
+      "name_fa": "وان",
+      "name_en": "Van",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d25e02fe558",
+      "name_fa": "یالوا",
+      "name_en": "Yalova",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d26e4acd852",
+      "name_fa": "یوزگات",
+      "name_en": "Yozgat",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d27440f1664",
+      "name_fa": "زونگولداک",
+      "name_en": "Zonguldak",
+      "country_uid": "019df757-4fd4-70d9-a87b-08dac5c34fc7",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d280fed80cb",
+      "name_fa": "آخال",
+      "name_en": "Ahal",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d2912f9f6cd",
+      "name_fa": "عشق‌آباد",
+      "name_en": "Ashgabat",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d2a47fa3d7d",
+      "name_fa": "بلخان",
+      "name_en": "Balkan",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d2bad9dacf7",
+      "name_fa": "داش‌اغوز",
+      "name_en": "Dashoguz",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d2c7ae289a4",
+      "name_fa": "لباب",
+      "name_en": "Lebap",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    },
+    {
+      "uid": "019df762-e79a-7626-a1df-5d2d92eb87f3",
+      "name_fa": "مرو",
+      "name_en": "Mary",
+      "country_uid": "019df757-4fd4-70d9-a87b-08db648bba65",
+      "state_type": "PRO"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "measures": [
+    {
+      "measure_uid": "019e82b5-335b-7e1e-a0ce-049e45cd255d",
+      "created_by": "system",
+      "name": "پول ریال",
+      "description": "پول به ریال",
+      "value_type_code": "DEC",
+      "unit": "IIR"
+    }
+
+  ]
+}

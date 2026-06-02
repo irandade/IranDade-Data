@@ -1,0 +1,131 @@
+@startuml
+title Iran Dade Service - System Architecture
+
+!define RECTANGLE class
+
+package "Client Layer" {
+    [Public Clients] as PublicClients
+    [Admin Clients] as AdminClients
+}
+
+package "Gateway Layer" {
+    [Envoy Proxy] as EnvoyProxy
+    note right of EnvoyProxy
+      Routes requests based on host/path:
+      - xyz.com/api -> Public API
+      - admin.xyz.com/admin -> Admin API
+    end note
+}
+
+package "API Layer (FastAPI)" {
+    package "Public API" #LightGreen {
+        [Public Routers] as PublicRouters
+        note right of PublicRouters
+          No Authentication
+          Read-only Data Endpoints
+        end note
+    }
+
+    package "Admin API" #LightCoral {
+        [Admin Routers] as AdminRouters
+        [Keycloak Auth] as KeycloakAuth
+        note right of AdminRouters
+          Keycloak SSO Protected
+          Full CRUD Endpoints
+        end note
+    }
+
+    [FastAPI App Factory] as FastAPIApp
+}
+
+package "Application Layer" {
+    [MetaDataService] as MetaDataService
+    [DataService] as DataService
+    [VisualizationService] as VisualizationService
+    note right of DataService
+      Business Logic Orchestration
+      Enforces value population rules
+    end note
+}
+
+package "Domain Layer" {
+    package "Entities" #LightYellow {
+        [GeographyDimension]
+        [TimeDimension]
+        [Dimension]
+        [DimensionKind]
+        [DataSet]
+        [Fact]
+        [Observation]
+        [Measure]
+        [Chart]
+        [Dashboard]
+    }
+
+    package "Enums" #LightYellow {
+        [GeographyDimType]
+        [CalendarType]
+        [TimeDimensionType]
+        [ObservationsType]
+        [ValueType]
+    }
+
+    package "DTOs" #LightYellow {
+        [Request DTOs]
+        [Response DTOs]
+    }
+}
+
+package "Infrastructure Layer" {
+    [SQLAlchemyAdapter] as SQLAlchemyAdapter
+    [RedisAdapter] as RedisAdapter
+    [Repositories] as Repositories
+    note right of Repositories
+      One per aggregate root
+      Injected via ArchiPy DI
+    end note
+}
+
+package "Persistence Layer" {
+    database "PostgreSQL 18" as PostgreSQL
+    database "Redis" as Redis
+}
+
+package "Identity Provider" {
+    [Keycloak Server] as KeycloakServer
+}
+
+' Connections
+PublicClients --> EnvoyProxy
+AdminClients --> EnvoyProxy
+
+EnvoyProxy --> PublicRouters : /api/*
+EnvoyProxy --> AdminRouters : /admin/*
+
+PublicRouters --> FastAPIApp
+AdminRouters --> KeycloakAuth
+KeycloakAuth --> KeycloakServer
+AdminRouters --> FastAPIApp
+
+FastAPIApp --> MetaDataService
+FastAPIApp --> DataService
+FastAPIApp --> VisualizationService
+
+MetaDataService --> Repositories
+DataService --> Repositories
+VisualizationService --> Repositories
+
+Repositories --> SQLAlchemyAdapter
+Repositories --> RedisAdapter
+
+SQLAlchemyAdapter --> PostgreSQL
+RedisAdapter --> Redis
+
+' Clean Architecture Rule
+note bottom of ApplicationLayer
+  CRITICAL BOUNDARY:
+  Routes NEVER call Infrastructure directly.
+  All communication goes through Services.
+end note
+
+@enduml

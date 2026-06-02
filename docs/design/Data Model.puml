@@ -1,0 +1,284 @@
+@startuml
+title Iran Dade Data Model
+
+
+package "Visualization" as visualization_package{
+
+    class Chart  <<ManagerMixin>> #paleturquoise{
+        chart_uid : UUID
+        name : str
+        description : str
+    }
+
+    class Dashboard  <<ManagerMixin>> #paleturquoise{
+        dashboard_uid : UUID
+        name : str
+        description : str
+    }
+
+    class Card <<ManagerMixin>> #paleturquoise{
+
+    }
+
+    Chart "*" -- "*" Dashboard
+}
+
+
+
+
+package Utils{
+' Kind of measure used for observation
+    entity MeasureKind  #skyblue {
+      measure_kind_uid : UUID
+      name : string
+      alt_name : string
+      unit : varchar(50)
+      unit_coefficient : int
+      description : text
+    }
+
+
+
+    enum   CurrencyType <<code>> #beige{
+        IIR
+        USD
+
+    }
+
+
+
+
+    enum ValueType <<code>> #beige{
+      DECIMAL
+      FLOAT
+    }
+
+
+    MeasureKind "*"-up-"1" ValueType : <<code>>
+
+    enum   CurrencyExchangeType #beige{
+        CB_Market
+        FREE_Market
+
+    }
+    class CurrencyExchangeRate <<ManagerMixin>>  #pink{
+        currency_exchange_rate_uid : UUID
+        rate_at : datetime
+        value : int
+
+    }
+
+    CurrencyExchangeRate -- CurrencyExchangeType : base
+    CurrencyExchangeRate -- CurrencyType : base
+    CurrencyExchangeRate -- CurrencyType : quote
+
+}
+
+
+
+package "Meta Data" as metadata_package{
+
+    class GeographyDimension #lightgreen{
+        geography_dimension_uid : UUID
+        name_fa : str
+        name_en : str
+        description_fa : text
+        description_en : text
+        valid_start_at : datetime
+        valid_end_at : datetime
+    }
+
+    enum GeographyStateType <<code>> #beige{
+        STATE
+        PROVINCE
+        TERRITORY
+
+    }
+    enum GeographyDimType <<code>> #beige{
+        CONTINENT
+        COUNTRY
+        STATE
+        COUNTY
+        CITY
+    }
+
+    GeographyDimension "*"--"1" GeographyDimType : <<code>>
+    GeographyDimension "*"--"0-1" GeographyStateType : <<code>>
+
+    GeographyDimension "n"--"0-1" GeographyDimension : parent/child
+
+    class TimeDimension  <<ManagerMixin>> #lightgreen{
+        time_dimension_uid : UUID
+        name : str
+        description : str
+        after_origin : bool
+        century_value : int
+        year_value : int
+        month_value : int
+        day_value : int
+        day_of_week_value : int
+        date_value : date
+        datetime_value : datetime
+    }
+
+    TimeDimension "n"--"0-1" TimeDimension : parent/child
+
+    class DayDimension #lightgreen{
+        day_dimension_uid : UUID
+        grg_name : str
+        jal_name : str
+        lun_name : str
+        grg_century : int
+        grg_year : int
+        grg_month : int
+        grg_day : int
+        grg_day_of_week : int
+        jal_century : int
+        jal_year : int
+        jal_month : int
+        jal_day : int
+        jal_day_of_week : int
+        date_value : date
+    }
+
+DayDimension "n" -- "0-1" TimeDimension : grg_month
+DayDimension "n" -- "0-1" TimeDimension : jal_month
+
+    enum CalendarType <<code>> #beige{
+        LUNAR
+        GREGORIAN
+        JALALI
+    }
+
+    TimeDimension -- CalendarType : <<code>>
+    enum TimeDimensionType <<code>> #beige{
+        YEAR
+        MONTH
+        QUARTER
+        WEEK
+        DAY
+
+    }
+
+
+
+
+
+    TimeDimension -- TimeDimensionType : <<code>>
+
+
+    enum ConceptLevelType <<code>> #beige{
+        CLUSTER
+        DOMAIN
+        SUBDOMAIN
+        TOPIC
+        INDICATOR
+
+    }
+
+
+    class Concept  <<ManagerMixin>> #lightgreen{
+        concept_uid : uuid
+        created_at : datetime
+        name : str
+        alt_name1 : str
+        alt_name2 : str
+        alt_name3 : str
+        description : str
+    }
+
+    Concept "*"--"1" ConceptLevelType : <<code>>
+
+    Concept "n"--"0-1" Concept : parent/child
+
+
+    class DimensionKind  <<ManagerMixin>> #lightgreen{
+        dimension_kind_uid : uuid
+        created_at : datetime
+        name : str
+        alt_name1 : str
+        alt_name2 : str
+        alt_name3 : str
+
+        description : str
+    }
+
+
+
+    class DimensionValue  <<ManagerMixin>> #lightgreen{
+        dimension_value_uid : uuid
+        created_at : datetime
+        name : str
+        alt_name1 : str
+        alt_name2 : str
+        alt_name3 : str
+
+        description : str
+    }
+
+
+
+   DimensionValue "n"--"1" DimensionKind
+   DimensionValue "n"--"0-1" DimensionValue :parent/child
+
+
+
+
+
+}
+
+
+package "Data" as data_package{
+
+
+
+
+'main number value will stored here
+    class Observation #skyblue {
+      observation_uid : UUID
+      decimal_value : decimal
+      float_value : decimal
+    }
+
+
+
+    enum ObservationsType <<code>> #beige{
+        FORMAL
+        SEMIFORMAL
+        INFORMAL
+
+    }
+
+    Observation "*"-up-"1" ObservationsType : <<code>>
+
+'    set of observations
+    class Indicator<<BE>> #skyblue{
+        indicator_uid : uuid
+        name : str
+        description : str
+    }
+
+    class ObservationDimensionValueRel #lightcyan{
+        observation_uid : UUID
+        dimension_value_uid : UUID
+    }
+
+    ObservationDimensionValueRel "*" -- "1" Observation
+    ObservationDimensionValueRel "*" -- "1" DimensionValue
+    Observation "n"-down-"0-1" GeographyDimension
+    Observation "n"-down-"0-1" TimeDimension
+
+    MeasureKind "1"--"n" Observation
+
+}
+
+
+
+
+
+
+Observation "*" -up- "1" Indicator
+
+Indicator "*"--"1" Concept
+
+@enduml
