@@ -16,13 +16,9 @@
       "default": "system",
       "description": "Who created this record"
     },
-    "decimal_value": {
+    "value": {
       "type": "number",
-      "description": "Decimal value for high-precision measurements"
-    },
-    "float_value": {
-      "type": "number",
-      "description": "Floating-point value for approximate measurements"
+      "description": "Numeric value of the observation"
     },
     "series_uid": {
       "type": "string",
