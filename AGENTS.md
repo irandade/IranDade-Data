@@ -4,9 +4,9 @@ Data platform for Iranian economic/social indicators. Currently data modeling an
 
 ## Source of truth
 
-- `docs/ddl/initialize_db.sql` — DDL
-- `docs/design/Data Model.puml` — canonical enum codes in `Name<CODE>` format
-- `schemas/*.schema.json` — 16 JSON Schema (draft-07) files
+- `docs/design/Data Model.puml` — **source of truth for schema design** (entities, attributes, enums with codes, relationships)
+- `docs/ddl/initialize_db.sql` — DDL derived from PUML
+- `schemas/*.schema.json` — 16 JSON Schema (draft-07) files derived from PUML
 
 ## Validation
 
@@ -14,7 +14,7 @@ Data platform for Iranian economic/social indicators. Currently data modeling an
 python3 scripts/validate_meta_data.py
 ```
 
-Auto-installs `jsonschema` if missing. Validates all `data/meta/<table>/*.json` against `schemas/<table>.schema.json`. Hardcoded skip of `data/meta/measure_kind/sample.json`.
+Auto-installs `jsonschema` if missing. Validates all `data/meta/<table>/*.json` against `schemas/<table>.schema.json`. Hardcoded skip of `data/meta/measurement_unit/sample.json`.
 
 ## Directory layout
 

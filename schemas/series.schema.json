@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "series.schema.json",
+  "title": "Series",
+  "description": "A data series — groups observations for an indicator measured in a specific unit, with a defined formality and time granularity",
+  "type": "object",
+  "properties": {
+    "series_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Name of the series"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the series"
+    },
+    "formality_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["FRM", "SFM", "INF", "MIX"],
+      "description": "Formality type: FRM=Formal, SFM=Semiformal, INF=Informal, MIX=Mixed"
+    },
+    "time_dimension_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["CEN", "YEA", "MON", "QRT", "WEE", "DAY"],
+      "description": "Time granularity: CEN=Century, YEA=Year, MON=Month, QRT=Quarter, WEE=Week, DAY=Day"
+    },
+    "indicator_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to indicator"
+    },
+    "measurement_unit_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to measurement_unit"
+    }
+  },
+  "required": [
+    "series_uid",
+    "name",
+    "formality_type_code",
+    "time_dimension_type_code",
+    "indicator_uid",
+    "measurement_unit_uid"
+  ],
+  "additionalProperties": false
+}

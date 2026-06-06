@@ -1,7 +1,7 @@
 {
-  "dimension_kind": [
+  "dimension_class": [
     {
-      "dimension_kind_uid": "019e870b-daa0-76d8-9552-f5eeb406be58",
+      "dimension_class_uid": "019e870b-daa0-76d8-9552-f5eeb406be58",
       "name": "Gender",
       "alt_name1": "جنسیت",
       "alt_name2": "Sex",
@@ -9,7 +9,7 @@
       "description": "تفکیک داده‌ها بر اساس جنسیت"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce91eb86f493",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce91eb86f493",
       "name": "Age Group",
       "alt_name1": "گروه سنی",
       "alt_name2": "Age",
@@ -17,7 +17,7 @@
       "description": "تفکیک داده‌ها بر اساس سن یا گروه‌های سنی"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce922717077b",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce922717077b",
       "name": "Education Level",
       "alt_name1": "سطح تحصیلات",
       "alt_name2": "Educational Attainment",
@@ -25,7 +25,7 @@
       "description": "تفکیک داده‌ها بر اساس سطح تحصیلات"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9391c0360d",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce9391c0360d",
       "name": "Marital Status",
       "alt_name1": "وضعیت تأهل",
       "alt_name2": "Marriage Status",
@@ -33,7 +33,7 @@
       "description": "تفکیک داده‌ها بر اساس وضعیت تأهل"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce946891102f",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce946891102f",
       "name": "Employment Status",
       "alt_name1": "وضعیت فعالیت",
       "alt_name2": "Labour Force Status",
@@ -41,7 +41,7 @@
       "description": "شاغل، بیکار، غیرفعال و سایر وضعیت‌های بازار کار"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce95c8d507b0",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce95c8d507b0",
       "name": "Economic Sector",
       "alt_name1": "بخش اقتصادی",
       "alt_name2": "Industry Sector",
@@ -49,7 +49,7 @@
       "description": "کشاورزی، صنعت، خدمات و سایر بخش‌های اقتصادی"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce96244b09a2",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce96244b09a2",
       "name": "Income Group",
       "alt_name1": "گروه درآمدی",
       "alt_name2": "Income Decile",
@@ -57,7 +57,7 @@
       "description": "دهک‌ها، پنجک‌ها یا سایر گروه‌های درآمدی"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce97087f46ea",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce97087f46ea",
       "name": "Urbanity",
       "alt_name1": "نوع سکونت",
       "alt_name2": "Urban Rural Classification",
@@ -65,7 +65,7 @@
       "description": "تفکیک داده‌ها بر اساس شهری یا روستایی بودن"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce98ea808393",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce98ea808393",
       "name": "Occupation Group",
       "alt_name1": "گروه شغلی",
       "alt_name2": "Occupation",
@@ -73,7 +73,7 @@
       "description": "طبقه‌بندی مشاغل بر اساس گروه‌های شغلی استاندارد"
     },
     {
-      "dimension_kind_uid": "019e870b-daa1-76ea-a2b3-ce9992e3b358",
+      "dimension_class_uid": "019e870b-daa1-76ea-a2b3-ce9992e3b358",
       "name": "Ownership Type",
       "alt_name1": "نوع مالکیت",
       "alt_name2": "Ownership",

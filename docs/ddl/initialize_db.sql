@@ -101,14 +101,13 @@ CREATE INDEX idx_concept_parent ON concept (parent_concept_uid);
 
 
 
-CREATE TABLE measure_kind
+CREATE TABLE measurement_unit
 (
-    measure_kind_uid   UUID PRIMARY KEY,
+    measurement_unit_uid   UUID PRIMARY KEY,
     created_at         TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by         VARCHAR(255)             NOT NULL,
     name               VARCHAR(255)             NOT NULL,
     alt_name           VARCHAR(255)             NOT NULL,
-    unit               VARCHAR(50),
     unit_coefficient   INTEGER                           DEFAULT 1,
     unit_type_code     VARCHAR(3)               NOT NULL,
     base_year          INTEGER,
@@ -119,9 +118,9 @@ CREATE TABLE measure_kind
 
 
 
-CREATE TABLE dimension_kind
+CREATE TABLE dimension_class
 (
-    dimension_kind_uid UUID PRIMARY KEY,
+    dimension_class_uid UUID PRIMARY KEY,
     created_at         TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by         VARCHAR(255)             NOT NULL,
     name               VARCHAR(255)             NOT NULL,
@@ -147,7 +146,7 @@ CREATE TABLE dimension_value
 
 
     parent_dimension_value_uid UUID                     REFERENCES dimension_value (dimension_value_uid) ON DELETE SET NULL,
-    dimension_kind_uid         UUID                     NOT NULL REFERENCES dimension_kind (dimension_kind_uid) ON DELETE SET NULL
+    dimension_class_uid         UUID                     NOT NULL REFERENCES dimension_class (dimension_class_uid) ON DELETE SET NULL
 );
 
 CREATE INDEX idx_dimension_parent ON dimension_value (parent_dimension_value_uid);
@@ -182,11 +181,11 @@ CREATE TABLE series
     formality_type_code      VARCHAR(3)               NOT NULL,
     time_dimension_type_code VARCHAR(3)               NOT NULL,
     indicator_uid            UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
-    measure_kind_uid         UUID                     NOT NULL REFERENCES measure_kind (measure_kind_uid) ON DELETE RESTRICT
+    measurement_unit_uid         UUID                     NOT NULL REFERENCES measurement_unit (measurement_unit_uid) ON DELETE RESTRICT
 );
 
 CREATE INDEX idx_series_indicator ON series (indicator_uid);
-CREATE INDEX idx_series_measure ON series (measure_kind_uid);
+CREATE INDEX idx_series_measurement_unit ON series (measurement_unit_uid);
 
 
 

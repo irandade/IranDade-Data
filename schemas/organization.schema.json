@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "organization.schema.json",
+  "title": "Organization",
+  "description": "A source organization that publishes economic or social data",
+  "type": "object",
+  "properties": {
+    "organization_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Organization name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the organization"
+    },
+    "is_domestic": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the organization is domestic (Iranian) or foreign"
+    },
+    "website": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Organization website URL"
+    }
+  },
+  "required": [
+    "organization_id",
+    "name"
+  ],
+  "additionalProperties": false
+}

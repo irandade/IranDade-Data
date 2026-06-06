@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/07/schema#",
-  "$id": "dimension_kind.schema.json",
-  "title": "Dimension Kind",
+  "$id": "dimension_class.schema.json",
+  "title": "Dimension Class",
   "description": "A category of dimension values (e.g. Gender, Location Type, Age Group)",
   "type": "object",
   "properties": {
-    "dimension_kind_uid": {
+    "dimension_class_uid": {
       "type": "string",
       "format": "uuid",
       "description": "UUID v7 primary key"
@@ -38,11 +38,11 @@
     },
     "description": {
       "type": "string",
-      "description": "Description of this dimension kind"
+      "description": "Description of this dimension class"
     }
   },
   "required": [
-    "dimension_kind_uid",
+    "dimension_class_uid",
     "name",
     "alt_name1",
     "alt_name2",

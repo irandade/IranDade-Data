@@ -45,10 +45,10 @@
       "format": "uuid",
       "description": "FK to parent dimension_value (self-referencing hierarchy)"
     },
-    "dimension_kind_uid": {
+    "dimension_class_uid": {
       "type": "string",
       "format": "uuid",
-      "description": "FK to dimension_kind that this value belongs to"
+      "description": "FK to dimension_class that this value belongs to"
     }
   },
   "required": [
@@ -57,7 +57,7 @@
     "alt_name1",
     "alt_name2",
     "alt_name3",
-    "dimension_kind_uid"
+    "dimension_class_uid"
   ],
   "additionalProperties": false
 }

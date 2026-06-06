@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/07/schema#",
+  "$id": "source_document.schema.json",
+  "title": "Source Document",
+  "description": "A document from which observations are sourced — PDF, Excel, web page, etc.",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v7 primary key"
+    },
+    "created_by": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "system",
+      "description": "Who created this record"
+    },
+    "url": {
+      "type": "string",
+      "maxLength": 2048,
+      "description": "Source URL"
+    },
+    "os_path": {
+      "type": "string",
+      "maxLength": 1024,
+      "description": "Local file system path"
+    },
+    "source_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["WEB", "PDF", "WRD", "EXC", "PRS"],
+      "description": "Source type: WEB=Web, PDF=PDF, WRD=Word, EXC=Excel, PRS=Presentation"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the document was fetched"
+    },
+    "organization_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to organization that published this document"
+    }
+  },
+  "required": [
+    "source_id",
+    "source_type_code"
+  ],
+  "additionalProperties": false
+}

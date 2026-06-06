@@ -42,7 +42,7 @@ package "Source" as source_pkg{
         uuid source_id
         string url
         string os_path
-        SourceType source_type_code
+        SourceType source_type
         datetime fetched_at
 
     }
@@ -108,14 +108,13 @@ package Utils{
 
 package "Meta Data" as metadata_package{
 
-    ' Kind of measure used for observation
-    class measure_kind  #lightgreen {
-      uuid measure_kind_uid
+    ' unit of measure used for observation
+    entity MeasurementUnit  #lightgreen {
+      uuid measurement_unit_uid
       string name
       string alt_name
-      string unit
-      UnitType unit_type_code
-      CurrencyType currency_type_code
+      UnitType unit_type
+      CurrencyType currency_type
       int unit_coefficient
       int base_year
       text description
@@ -127,12 +126,12 @@ package "Meta Data" as metadata_package{
         str name_en
         text description_fa
         text description_en
-        string code
         datetime valid_start_at
         datetime valid_end_at
 
-        GeographyDimType geography_dim_type_code
-        SubCountryType state_type_code
+        string code
+        SubCountryType province_type
+        GeographyDimType dim_type
     }
 
     enum SubCountryType  #beige{
@@ -146,7 +145,7 @@ package "Meta Data" as metadata_package{
 
         CONTINENT<CON>
         COUNTRY<COU>
-        STATE<STA>
+        SUBCOUNTRY<SBC>
         COUNTY<CTY>
         CITY<CIT>
     }
@@ -253,18 +252,18 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
 
     Concept "n"--"0-1" Concept : parent/child
 
-    ' Dimension Kind
+    ' Dimension Class
     ' Defines a classification axis used to segment or analyze
     ' measures.
     ' Time  Dimensions exceptionally managed in DayDimension,TimeDimension
     ' Geography  Dimensions exceptionally managed in GeographyDimension
-    ' Dimension kinds describe the type of breakdown, such as:
+    ' Dimension class  describe the type of breakdown, such as:
     ' - Gender
     ' - Age Group
 
 
-    class dimension_kind  <<ManagerMixin>> #lightgreen{
-        uuid dimension_kind_uid
+    class DimensionClass  <<ManagerMixin>> #lightgreen{
+        uuid dimension_class_uid
         datetime created_at
         str name
         str alt_name1
@@ -276,16 +275,16 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
 
 
     ' Dimension Value
-    ' A specific member of a dimension kind.
+    ' A specific member of a dimension class.
     '
     ' Dimension values provide the actual category used in a
     ' measure breakdown.
     '
     ' Examples:
-    ' Dimension Kind: Geography
+    ' Dimension class: Geography
     ' Values: Iran, Tehran Province, Isfahan Province
     '
-    ' Dimension Kind: Gender
+    ' Dimension class: Gender
     ' Values: Male, Female
     class DimensionValue  <<ManagerMixin>> #lightgreen{
         uuid dimension_value_uid
@@ -302,11 +301,11 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
 ' Indicator
 ' A measurable statistical indicator associated with a concept.
 ' Indicators define what is observed or reported and may
-' be represented by one or more measures over time.
-' list of data will be stored in observation
+' be represented by one or more measures over time  in series.
+' list of data will be stored in observation via seriess
 '
 ' Examples:
-' - Inflation Rate
+' - Inflation Rate[indicator], cbi,amar[series], specific number in time, category[observation]
 ' - Unemployment Rate
 ' - GDP Growth Rate
     class Indicator<<BE>> #lightgreen{
@@ -315,7 +314,7 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
         str description
     }
 
-   DimensionValue "n"--"1" dimension_kind
+   DimensionValue "n"--"1" DimensionClass
    DimensionValue "n"--"0-1" DimensionValue :parent/child
 
 
@@ -341,7 +340,7 @@ package "Data" as data_package{
 
 
 ' Observation
-' A quantitative observation of a dataset for a specific
+' A quantitative observation of a series for a specific
 ' time period and dimensional context.
 '
 ' A Observation contains the actual reported value together with
@@ -390,14 +389,14 @@ package "Data" as data_package{
 
 
 
-' from every dimentsionkind just one dimenstion value can be relate to single observation
+' from every dimensionclass just one dimenstion value can be relate to single observation
     Observation "*" -- "*" DimensionValue
 
 
     Observation "n"-down-"0-1" GeographyDimension
     Observation "n"-down-"0-1" TimeDimension
 
-    measure_kind "1"--"n" Series
+    MeasurementUnit "1"--"n" Series
 
     Observation "n"--"1" SourceDocument
 }

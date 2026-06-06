@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/07/schema#",
-  "$id": "measure_kind.schema.json",
-  "title": "Measure Kind",
-  "description": "Definition of a measurement type — its unit, value type, and optional currency",
+  "$id": "measurement_unit.schema.json",
+  "title": "Measurement Unit",
+  "description": "Definition of a measurement unit — its type, coefficient, and optional currency",
   "type": "object",
   "properties": {
-    "measure_kind_uid": {
+    "measurement_unit_uid": {
       "type": "string",
       "format": "uuid",
       "description": "UUID v7 primary key"
@@ -25,11 +25,6 @@
       "type": "string",
       "maxLength": 255,
       "description": "Alternative name / abbreviation"
-    },
-    "unit": {
-      "type": "string",
-      "maxLength": 50,
-      "description": "Unit of measurement display text (e.g. 'درصد', 'Rial')"
     },
     "unit_coefficient": {
       "type": "integer",
@@ -60,7 +55,7 @@
     }
   },
   "required": [
-    "measure_kind_uid",
+    "measurement_unit_uid",
     "name",
     "alt_name",
     "unit_type_code"
