@@ -273,12 +273,12 @@ CREATE TABLE dashboard
     description   TEXT
 );
 
-CREATE TABLE dashboard_chart
+CREATE TABLE dashboard_chart_rel
 (
     dashboard_uid UUID NOT NULL REFERENCES dashboard (dashboard_uid) ON DELETE CASCADE,
     chart_uid     UUID NOT NULL REFERENCES chart (chart_uid) ON DELETE CASCADE,
     PRIMARY KEY (dashboard_uid, chart_uid)
 );
 
-CREATE INDEX idx_dashboard_chart_chart ON dashboard_chart (chart_uid);
-CREATE INDEX idx_dashboard_chart_dashboard ON dashboard_chart (dashboard_uid);
+CREATE INDEX idx_dashboard_chart_chart ON dashboard_chart_rel (chart_uid);
+CREATE INDEX idx_dashboard_chart_dashboard ON dashboard_chart_rel (dashboard_uid);
