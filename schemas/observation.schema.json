@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/07/schema#",
   "$id": "observation.schema.json",
   "title": "Observation",
-  "description": "A single data point — a numeric value for an indicator at a point in time and place, measured in a specific measure kind",
+  "description": "A single data point — a numeric value for a series at a point in time and place",
   "type": "object",
   "properties": {
     "observation_uid": {
@@ -24,22 +24,36 @@
       "type": "number",
       "description": "Floating-point value for approximate measurements"
     },
-    "indicator_uid": {
+    "series_uid": {
       "type": "string",
       "format": "uuid",
-      "description": "FK to indicator this observation belongs to"
-    },
-    "measure_kind_uid": {
-      "type": "string",
-      "format": "uuid",
-      "description": "FK to measure_kind (unit of measurement)"
+      "description": "FK to series this observation belongs to"
     },
     "observation_type_code": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
-      "enum": ["FRM", "SFM", "INF"],
-      "description": "Observation type: FRM=Formal, SFM=Semiformal, INF=Informal"
+      "enum": ["OBS", "EST"],
+      "description": "Observation type: OBS=Observed, EST=Estimated"
+    },
+    "formality_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["FRM", "SFM", "INF", "MIX"],
+      "description": "Formality type: FRM=Formal, SFM=Semiformal, INF=Informal, MIX=Mixed"
+    },
+    "review_status_type_code": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["DSC", "REV"],
+      "description": "Review status: DSC=Discovered, REV=Reviewed"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the observation was published"
     },
     "geography_dimension_uid": {
       "type": "string",
@@ -50,12 +64,16 @@
       "type": "string",
       "format": "uuid",
       "description": "FK to time_dimension (time context)"
+    },
+    "source_document_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to source_document (source provenance)"
     }
   },
   "required": [
     "observation_uid",
-    "indicator_uid",
-    "measure_kind_uid",
+    "series_uid",
     "observation_type_code"
   ],
   "additionalProperties": false

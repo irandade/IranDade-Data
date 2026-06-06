@@ -17,6 +17,7 @@ CREATE TABLE geography_dimension
     name_en                        VARCHAR(255)             NOT NULL,
     description_fa                 TEXT,
     description_en                 TEXT,
+    code                           VARCHAR(255),
     valid_start_at                 TIMESTAMP WITH TIME ZONE,
     valid_end_at                   TIMESTAMP WITH TIME ZONE,
     geography_dim_type_code        VARCHAR(3)               NOT NULL,
@@ -109,32 +110,12 @@ CREATE TABLE measure_kind
     alt_name           VARCHAR(255)             NOT NULL,
     unit               VARCHAR(50),
     unit_coefficient   INTEGER                           DEFAULT 1,
+    unit_type_code     VARCHAR(3)               NOT NULL,
+    base_year          INTEGER,
     description        TEXT,
-    value_type_code    VARCHAR(3)               NOT NULL,
     currency_type_code VARCHAR(3) NULL
 
 );
-
-
-
-CREATE TABLE dimension_value
-(
-    dimension_value_uid        UUID PRIMARY KEY,
-    created_at                 TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    created_by                 VARCHAR(255)             NOT NULL,
-    name                       VARCHAR(255)             NOT NULL,
-    alt_name1                  VARCHAR(255)             NOT NULL,
-    alt_name2                  VARCHAR(255)             NOT NULL,
-    alt_name3                  VARCHAR(255)             NOT NULL,
-    description                TEXT,
-
-
-    parent_dimension_value_uid UUID                     REFERENCES dimension_value (dimension_value_uid) ON DELETE SET NULL,
-    dimension_kind_uid         UUID                     NOT NULL REFERENCES dimension_kind (dimension_kind_uid) ON DELETE SET NULL
-);
-
-
-CREATE INDEX idx_dimension_parent ON dimension_value (parent_dimension_value_uid);
 
 
 
@@ -153,6 +134,25 @@ CREATE TABLE dimension_kind
 );
 
 
+CREATE TABLE dimension_value
+(
+    dimension_value_uid        UUID PRIMARY KEY,
+    created_at                 TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by                 VARCHAR(255)             NOT NULL,
+    name                       VARCHAR(255)             NOT NULL,
+    alt_name1                  VARCHAR(255)             NOT NULL,
+    alt_name2                  VARCHAR(255)             NOT NULL,
+    alt_name3                  VARCHAR(255)             NOT NULL,
+    description                TEXT,
+
+
+    parent_dimension_value_uid UUID                     REFERENCES dimension_value (dimension_value_uid) ON DELETE SET NULL,
+    dimension_kind_uid         UUID                     NOT NULL REFERENCES dimension_kind (dimension_kind_uid) ON DELETE SET NULL
+);
+
+CREATE INDEX idx_dimension_parent ON dimension_value (parent_dimension_value_uid);
+
+
 
 -- =============================================================================
 -- DATA PACKAGE
@@ -164,23 +164,61 @@ CREATE TABLE indicator
     created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by    VARCHAR(255)             NOT NULL,
     name          VARCHAR(255)             NOT NULL,
-    description   TEXT
-
+    description   TEXT,
+    concept_uid   UUID                     REFERENCES concept (concept_uid) ON DELETE SET NULL
 
 );
 
+CREATE INDEX idx_indicator_concept ON indicator (concept_uid);
 
 
-CREATE TABLE indicator_concept_rel
+CREATE TABLE series
 (
-    indicator_uid UUID NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
-    concept_uid   UUID NOT NULL REFERENCES concept (concept_uid) ON DELETE CASCADE,
-    PRIMARY KEY (indicator_uid, concept_uid)
+    series_uid               UUID PRIMARY KEY,
+    created_at               TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by               VARCHAR(255)             NOT NULL,
+    name                     VARCHAR(255)             NOT NULL,
+    description              TEXT,
+    formality_type_code      VARCHAR(3)               NOT NULL,
+    time_dimension_type_code VARCHAR(3)               NOT NULL,
+    indicator_uid            UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
+    measure_kind_uid         UUID                     NOT NULL REFERENCES measure_kind (measure_kind_uid) ON DELETE RESTRICT
 );
 
-CREATE INDEX idx_indicator_concept_rel_concept ON indicator_concept_rel (concept_uid);
-CREATE INDEX idx_indicator_concept_rel_indicator ON indicator_concept_rel (indicator_uid);
+CREATE INDEX idx_series_indicator ON series (indicator_uid);
+CREATE INDEX idx_series_measure ON series (measure_kind_uid);
 
+
+
+-- =============================================================================
+-- SOURCE PACKAGE
+-- =============================================================================
+
+CREATE TABLE organization
+(
+    organization_id UUID PRIMARY KEY,
+    created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by      VARCHAR(255)             NOT NULL,
+    name            VARCHAR(255)             NOT NULL,
+    description     TEXT,
+    is_domestic     BOOLEAN                  NOT NULL DEFAULT TRUE,
+    website         VARCHAR(255)
+);
+
+
+CREATE TABLE source_document
+(
+    source_id       UUID PRIMARY KEY,
+    created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by      VARCHAR(255)             NOT NULL,
+    url             VARCHAR(2048),
+    os_path         VARCHAR(1024),
+    source_type_code VARCHAR(3)              NOT NULL,
+    fetched_at      TIMESTAMP WITH TIME ZONE,
+    organization_id UUID                     REFERENCES organization (organization_id) ON DELETE SET NULL
+);
+
+CREATE INDEX idx_source_doc_org ON source_document (organization_id);
 
 
 CREATE TABLE observation
@@ -190,17 +228,29 @@ CREATE TABLE observation
     created_by              VARCHAR(255)             NOT NULL,
     decimal_value           DECIMAL(28, 10),
     float_value             NUMERIC(28, 10),
-    indicator_uid           UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
-    measure_kind_uid        UUID                     NOT NULL REFERENCES measure_kind (measure_kind_uid) ON DELETE RESTRICT,
+    series_uid              UUID                     NOT NULL REFERENCES series (series_uid) ON DELETE CASCADE,
     observation_type_code   VARCHAR(3)               NOT NULL,
+    formality_type_code     VARCHAR(3),
+    review_status_type_code VARCHAR(3),
+    published_at            TIMESTAMP WITH TIME ZONE,
     geography_dimension_uid UUID                     REFERENCES geography_dimension (geography_dimension_uid) ON DELETE SET NULL,
-    time_dimension_uid      UUID                     REFERENCES time_dimension (time_dimension_uid) ON DELETE SET NULL
+    time_dimension_uid      UUID                     REFERENCES time_dimension (time_dimension_uid) ON DELETE SET NULL,
+    source_document_uid     UUID                     REFERENCES source_document (source_id) ON DELETE SET NULL
 );
 
-CREATE INDEX idx_observation_indicator ON observation (indicator_uid);
-CREATE INDEX idx_observation_measure ON observation (measure_kind_uid);
+CREATE INDEX idx_observation_series ON observation (series_uid);
 CREATE INDEX idx_observation_geo ON observation (geography_dimension_uid);
 CREATE INDEX idx_observation_time ON observation (time_dimension_uid);
+CREATE INDEX idx_observation_source ON observation (source_document_uid);
+
+
+CREATE TABLE observation_dimension_value_rel
+(
+    observation_uid     UUID NOT NULL REFERENCES observation (observation_uid) ON DELETE CASCADE,
+    dimension_value_uid UUID NOT NULL REFERENCES dimension_value (dimension_value_uid) ON DELETE CASCADE,
+    PRIMARY KEY (observation_uid, dimension_value_uid)
+);
+
 
 
 -- =============================================================================

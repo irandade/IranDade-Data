@@ -24,6 +24,11 @@
     "description": {
       "type": "string",
       "description": "Description of the indicator"
+    },
+    "concept_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to concept this indicator belongs to"
     }
   },
   "required": [

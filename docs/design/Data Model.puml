@@ -5,15 +5,15 @@ title Iran Dade Data Model
 package "Visualization" as visualization_package{
 
     class Chart  <<ManagerMixin>> #paleturquoise{
-        chart_uid : UUID
-        name : str
-        description : str
+        uuid chart_uid
+        str name
+        str description
     }
 
     class Dashboard  <<ManagerMixin>> #paleturquoise{
-        dashboard_uid : UUID
-        name : str
-        description : str
+        uuid dashboard_uid
+        str name
+        str description
     }
 
     class Card <<ManagerMixin>> #paleturquoise{
@@ -26,54 +26,81 @@ package "Visualization" as visualization_package{
 
 
 
+package "Source" as source_pkg{
+
+    class Organization #linen{
+        uuid organization_id
+        string name
+        string description
+        bool is_domestic
+        string website
+    }
+
+
+
+    class SourceDocument #linen{
+        uuid source_id
+        string url
+        string os_path
+        SourceType source_type_code
+        datetime fetched_at
+
+    }
+
+    enum SourceType #linen{
+        WEB<WEB>
+        PDF<PDF>
+        WORD<WRD>
+        EXCEL<EXC>
+        PRESENTATION<PRS>
+    }
+
+
+    SourceDocument "*"--"1" Organization
+}
 package Utils{
-' Kind of measure used for observation
-    entity MeasureKind  #skyblue {
-      measure_kind_uid : UUID
-      name : string
-      alt_name : string
-      unit : varchar(50)
-      unit_coefficient : int
-      description : text
-    }
 
 
+    enum   UnitType #beige{
 
-    enum   CurrencyType <<code>> #beige{
+        '   distance
+        METER<MTR>
+        ' something like inflation
+        UNIT<UNT>
+        '   area
+        SQUARE_METER<MT2>
+        PERSON<PRS>
         IIR<IIR>
-
         USD<USD>
+        PERCENT<PCT>
+        INDEX_PONT<IXP>
 
 
     }
 
-
-
-
-    enum ValueType <<code>> #beige{
-       DECIMAL<DEC>
-       FLOAT<FLT>
-
+    enum   CurrencyType  #beige{
+        IIR<IIR>
+        USD<USD>
     }
 
 
-    MeasureKind "*"-up-"1" ValueType : <<code>>
+
 
     enum   CurrencyExchangeType #beige{
-        CB_Market
-        FREE_Market
+        CB_MARKET<CBM>
+        FREE_MARKET<FRM>
 
     }
     class CurrencyExchangeRate <<ManagerMixin>>  #pink{
-        currency_exchange_rate_uid : UUID
-        rate_at : datetime
-        value : int
-
+        uuid currency_exchange_rate_uid
+        datetime rate_at
+        decimal value
+        CurrencyExchangeType : exchange_type
+        CurrencyType : base_currency_type
+        CurrencyType : quote_currency_type
     }
 
-    CurrencyExchangeRate -- CurrencyExchangeType : base
-    CurrencyExchangeRate -- CurrencyType : base
-    CurrencyExchangeRate -- CurrencyType : quote
+
 
 }
 
@@ -81,24 +108,41 @@ package Utils{
 
 package "Meta Data" as metadata_package{
 
-    class GeographyDimension #lightgreen{
-        geography_dimension_uid : UUID
-        name_fa : str
-        name_en : str
-        description_fa : text
-        description_en : text
-        valid_start_at : datetime
-        valid_end_at : datetime
+    ' Kind of measure used for observation
+    class measure_kind  #lightgreen {
+      uuid measure_kind_uid
+      string name
+      string alt_name
+      string unit
+      UnitType unit_type_code
+      CurrencyType currency_type_code
+      int unit_coefficient
+      int base_year
+      text description
     }
 
-    enum GeographyStateType <<code>> #beige{
+    class GeographyDimension #lightgreen{
+        uuid geography_dimension_uid
+        str name_fa
+        str name_en
+        text description_fa
+        text description_en
+        string code
+        datetime valid_start_at
+        datetime valid_end_at
+
+        GeographyDimType geography_dim_type_code
+        SubCountryType state_type_code
+    }
+
+    enum SubCountryType  #beige{
         PROVINCE<PRO>
         TERRITORY<TRI>
         STATE<STA>
 
 
     }
-    enum GeographyDimType <<code>> #beige{
+    enum GeographyDimType  #beige{
 
         CONTINENT<CON>
         COUNTRY<COU>
@@ -107,49 +151,54 @@ package "Meta Data" as metadata_package{
         CITY<CIT>
     }
 
-    GeographyDimension "*"--"1" GeographyDimType : <<code>>
-    GeographyDimension "*"--"0-1" GeographyStateType : <<code>>
+
 
     GeographyDimension "n"--"0-1" GeographyDimension : parent/child
 
+'    some period of tome like month,year in some calendar like year 1404 in jalali cal
     class TimeDimension  <<ManagerMixin>> #lightgreen{
-        time_dimension_uid : UUID
-        name : str
-        description : str
-        after_origin : bool
-        century_value : int
-        year_value : int
-        month_value : int
-        day_value : int
-        day_of_week_value : int
-        date_value : date
-        datetime_value : datetime
+        uuid time_dimension_uid
+        str name
+        str description
+        bool after_origin
+        int century_value
+        int year_value
+        int month_value
+        int day_value
+        int day_of_week_value
+        date date_value
+        datetime datetime_value
+        CalendarType calendar_type_code
+
+        TimeDimensionType time_dimension_type_code
+
     }
 
     TimeDimension "n"--"0-1" TimeDimension : parent/child
 
+' real calendar day in some calendar
     class DayDimension #lightgreen{
-        day_dimension_uid : UUID
-        grg_name : str
-        jal_name : str
-        lun_name : str
-        grg_century : int
-        grg_year : int
-        grg_month : int
-        grg_day : int
-        grg_day_of_week : int
-        jal_century : int
-        jal_year : int
-        jal_month : int
-        jal_day : int
-        jal_day_of_week : int
-        date_value : date
+        uuid day_dimension_uid
+        str grg_name
+        str jal_name
+        str lun_name
+        int grg_century
+        int grg_year
+        int grg_month
+        int grg_day
+        int grg_day_of_week
+        int jal_century
+        int jal_year
+        int jal_month
+        int jal_day
+        int jal_day_of_week
+        date date_value
     }
 
-DayDimension "n" -- "0-1" TimeDimension : grg_month
-DayDimension "n" -- "0-1" TimeDimension : jal_month
+DayDimension "n" -up- "0-1" TimeDimension : grg_month
+DayDimension "n" -up- "0-1" TimeDimension : jal_month
 
-    enum CalendarType <<code>> #beige{
+    enum CalendarType  #beige{
 
         LUNAR<LUN>
         GREGORIAN<GRG>
@@ -157,8 +206,8 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
 
     }
 
-    TimeDimension -- CalendarType : <<code>>
-    enum TimeDimensionType <<code>> #beige{
+
+    enum TimeDimensionType  #beige{
 
 
         CENTURY<CEN>
@@ -174,10 +223,8 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
 
 
 
-    TimeDimension -- TimeDimensionType : <<code>>
 
-
-    enum ConceptLevelType <<code>> #beige{
+    enum ConceptLevelType  #beige{
         CLUSTER<CLS>
         DOMAIN<DOM>
         SUBDOMAIN<SDO>
@@ -192,16 +239,17 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
     ' levels are in ConceptLevelType
     ' (e.g., Inflation, Unemployment, GDP, Poverty).
     class Concept  <<ManagerMixin>> #lightgreen{
-        concept_uid : uuid
-        created_at : datetime
-        name : str
-        alt_name1 : str
-        alt_name2 : str
-        alt_name3 : str
-        description : str
+        uuid concept_uid
+        datetime created_at
+        str name
+        str alt_name1
+        str alt_name2
+        str alt_name3
+        str description
+        ConceptLevelType level_type_code
     }
 
-    Concept "*"--"1" ConceptLevelType : <<code>>
+
 
     Concept "n"--"0-1" Concept : parent/child
 
@@ -215,15 +263,15 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
     ' - Age Group
 
 
-    class DimensionKind  <<ManagerMixin>> #lightgreen{
-        dimension_kind_uid : uuid
-        created_at : datetime
-        name : str
-        alt_name1 : str
-        alt_name2 : str
-        alt_name3 : str
+    class dimension_kind  <<ManagerMixin>> #lightgreen{
+        uuid dimension_kind_uid
+        datetime created_at
+        str name
+        str alt_name1
+        str alt_name2
+        str alt_name3
 
-        description : str
+        str description
     }
 
 
@@ -240,61 +288,16 @@ DayDimension "n" -- "0-1" TimeDimension : jal_month
     ' Dimension Kind: Gender
     ' Values: Male, Female
     class DimensionValue  <<ManagerMixin>> #lightgreen{
-        dimension_value_uid : uuid
-        created_at : datetime
-        name : str
-        alt_name1 : str
-        alt_name2 : str
-        alt_name3 : str
+        uuid dimension_value_uid
+        datetime created_at
+        str name
+        str alt_name1
+        str alt_name2
+        str alt_name3
 
-        description : str
+        str description
     }
 
-
-
-   DimensionValue "n"--"1" DimensionKind
-   DimensionValue "n"--"0-1" DimensionValue :parent/child
-
-
-
-
-
-}
-
-
-package "Data" as data_package{
-
-
-
-
-' Observation
-' A quantitative observation of an indicator for a specific
-' time period and dimensional context.
-'
-' A Observation contains the actual reported value together with
-' its unit, methodology, source, and dimensional breakdowns.
-'
-' Example:
-' Inflation Rate = 35.2%
-' Country = Iran
-' Year = 2024
-    class Observation #skyblue {
-      observation_uid : UUID
-      decimal_value : decimal
-      float_value : decimal
-    }
-
-
-
-    enum ObservationsType <<code>> #beige{
-        FORMAL<FRM>
-        SEMIFORMAL<SFM>
-
-        INFORMAL<INF>
-
-    }
-
-    Observation "*"-up-"1" ObservationsType : <<code>>
 
 ' Indicator
 ' A measurable statistical indicator associated with a concept.
@@ -306,24 +309,98 @@ package "Data" as data_package{
 ' - Inflation Rate
 ' - Unemployment Rate
 ' - GDP Growth Rate
-    class Indicator<<BE>> #skyblue{
-        indicator_uid : uuid
-        name : str
-        description : str
+    class Indicator<<BE>> #lightgreen{
+        uuid indicator_uid
+        str name
+        str description
     }
 
-    class ObservationDimensionValueRel #lightcyan{
-        observation_uid : UUID
-        dimension_value_uid : UUID
+   DimensionValue "n"--"1" dimension_kind
+   DimensionValue "n"--"0-1" DimensionValue :parent/child
+
+
+' Series
+' A data series grouping observations for an indicator
+' measured in a specific unit with a defined formality
+' and time granularity.
+    class Series<<BE>> #skyblue{
+        uuid series_uid
+        str name
+        str description
+        FormalityType formality_type_code
+        TimeDimensionType time_dimension_type_code
     }
 
-    ObservationDimensionValueRel "*" -- "1" Observation
-    ObservationDimensionValueRel "*" -- "1" DimensionValue
+
+}
+
+
+package "Data" as data_package{
+
+
+
+
+' Observation
+' A quantitative observation of a dataset for a specific
+' time period and dimensional context.
+'
+' A Observation contains the actual reported value together with
+' its unit, methodology, source, and dimensional breakdowns.
+'
+' Example:
+' Inflation Rate = 35.2%
+' Country = Iran
+' Year = 2024
+    class Observation #skyblue {
+      uuid observation_uid
+      decimal decimal_value
+      decimal float_value
+      ObservationType observation_type_code
+      FormalityType formality_type_code [0..1]
+      ReviewStatusType review_status_type_code
+      datetime published_at
+    }
+
+
+    enum ReviewStatusType #beige{
+        DISCOVERED<DSC>
+        REVIEWED<REV>
+    }
+
+
+    enum ObservationType #beige{
+        OBSERVED<OBS>
+        ESTIMATED<EST>
+
+    }
+
+    enum FormalityType  #beige{
+        FORMAL<FRM>
+        SEMIFORMAL<SFM>
+        INFORMAL<INF>
+        MIXED<MIX>
+
+    }
+
+
+
+
+
+
+
+
+
+
+' from every dimentsionkind just one dimenstion value can be relate to single observation
+    Observation "*" -- "*" DimensionValue
+
+
     Observation "n"-down-"0-1" GeographyDimension
     Observation "n"-down-"0-1" TimeDimension
 
-    MeasureKind "1"--"n" Observation
+    measure_kind "1"--"n" Series
 
+    Observation "n"--"1" SourceDocument
 }
 
 
@@ -331,8 +408,11 @@ package "Data" as data_package{
 
 
 
-Observation "*" -up- "1" Indicator
+    Series "1" -- "*" Observation
 
-Indicator "*"--"*" Concept
+
+
+    Indicator "1"-up-"*" Series
+    Indicator "*"-down-"1" Concept
 
 @enduml

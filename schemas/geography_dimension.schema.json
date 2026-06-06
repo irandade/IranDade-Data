@@ -34,6 +34,11 @@
       "type": "string",
       "description": "Description in English"
     },
+    "code": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "Geographic code (e.g. ISO code, national code)"
+    },
     "valid_start_at": {
       "type": "string",
       "format": "date-time",
@@ -49,14 +54,14 @@
       "minLength": 3,
       "maxLength": 3,
       "enum": ["CON", "COU", "STA", "CTY", "CIT"],
-      "description": "Geography dimension type: CON=Continent, COU=Country, STA=State, CTY=County, CIT=City"
+      "description": "Geography dimension type: CON=Continent, COU=Country, STA=State/Province, CTY=County, CIT=City"
     },
     "state_type_code": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
       "enum": ["PRO", "TRI", "STA"],
-      "description": "State type: PRO=Province, TRI=Territory"
+      "description": "State type: PRO=Province, TRI=Territory, STA=State"
     },
     "parent_geography_dimension_uid": {
       "type": "string",

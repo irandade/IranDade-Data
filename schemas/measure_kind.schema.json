@@ -29,23 +29,27 @@
     "unit": {
       "type": "string",
       "maxLength": 50,
-      "description": "Unit of measurement (e.g. PERCENT, IRRR, USD, PERSON)"
+      "description": "Unit of measurement display text (e.g. 'درصد', 'Rial')"
     },
     "unit_coefficient": {
       "type": "integer",
       "default": 1,
       "description": "Multiplier for unit conversion (e.g. 1000 for thousands)"
     },
-    "description": {
-      "type": "string",
-      "description": "Description of the measure"
-    },
-    "value_type_code": {
+    "unit_type_code": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
-      "enum": ["DEC", "FLT"],
-      "description": "Value storage type: DEC=Decimal, FLT=Float"
+      "enum": ["MTR", "UNT", "MT2", "PRS", "IIR", "USD", "PCT", "IXP"],
+      "description": "Unit type: MTR=Meter, UNT=Unit, MT2=Square Meter, PRS=Person, IIR=Iranian Rial, USD=US Dollar, PCT=Percent, IXP=Index Point"
+    },
+    "base_year": {
+      "type": "integer",
+      "description": "Base year for index-based measures"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the measure"
     },
     "currency_type_code": {
       "type": "string",
@@ -59,7 +63,7 @@
     "measure_kind_uid",
     "name",
     "alt_name",
-    "value_type_code"
+    "unit_type_code"
   ],
   "additionalProperties": false
 }
