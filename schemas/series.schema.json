@@ -25,14 +25,14 @@
       "type": "string",
       "description": "Description of the series"
     },
-    "formality_type_code": {
+    "formality_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
       "enum": ["FRM", "SFM", "INF", "MIX"],
       "description": "Formality type: FRM=Formal, SFM=Semiformal, INF=Informal, MIX=Mixed"
     },
-    "time_dimension_type_code": {
+    "time_dimension_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -53,8 +53,8 @@
   "required": [
     "series_uid",
     "name",
-    "formality_type_code",
-    "time_dimension_type_code",
+    "formality_type",
+    "time_dimension_type",
     "indicator_uid",
     "measurement_unit_uid"
   ],

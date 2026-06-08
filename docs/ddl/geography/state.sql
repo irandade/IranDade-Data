@@ -1,7 +1,7 @@
 -- Geography Dimension - States/Provinces/Territories
 -- For Iran and neighboring countries
--- geography_dim_type_code: STA (State level)
--- state_type_code: PRO (Province) or TRI (Territory)
+-- dim_type: STA (State level)
+-- sub_country_type: PRO (Province) or TRI (Territory)
 
 -- Iran Provinces
 INSERT INTO geography_dimension (
@@ -14,8 +14,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e799-77da-930d-1e3d1d143025', NOW(), 'system', 'البرز', 'Alborz', 'البرز (ایران)', 'Alborz (Iran)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08bbfbf15e44'),
@@ -61,8 +61,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e799-77da-930d-1e5cf1b08b22', NOW(), 'system', 'بدخشان', 'Badakhshan', 'بدخشان (افغانستان)', 'Badakhshan (Afghanistan)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08ae19888a26'),
@@ -111,8 +111,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e799-77da-930d-1e7eacf290f5', NOW(), 'system', 'آراگاتسوتن', 'Aragatsotn', 'آراگاتسوتن (ارمنستان)', 'Aragatsotn (Armenia)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08af1b2ca76b'),
@@ -138,8 +138,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e799-77da-930d-1e89991d0606', NOW(), 'system', 'آبشرون', 'Absheron', 'آبشرون (جمهوری آذربایجان)', 'Absheron (Azerbaijan)', NOW(), NULL, 'STA', 'TRI', '019df757-4fd4-70d9-a87b-08b03552578a'),
@@ -168,8 +168,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e79a-7626-a1df-5cbf46672ff1', NOW(), 'system', 'بغداد', 'Baghdad', 'بغداد (عراق)', 'Baghdad (Iraq)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08bc1438da93'),
@@ -203,8 +203,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e79a-7626-a1df-5cd20cbce6e8', NOW(), 'system', 'بلوچستان', 'Balochistan', 'بلوچستان (پاکستان)', 'Balochistan (Pakistan)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08ccb28c271a'),
@@ -225,8 +225,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e79a-7626-a1df-5cd84203af86', NOW(), 'system', 'آدانا', 'Adana', 'آدانا (ترکیه)', 'Adana (Turkey)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08dac5c34fc7'),
@@ -321,8 +321,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df762-e79a-7626-a1df-5d280fed80cb', NOW(), 'system', 'آخال', 'Ahal', 'آخال (ترکمنستان)', 'Ahal (Turkmenistan)', NOW(), NULL, 'STA', 'PRO', '019df757-4fd4-70d9-a87b-08db648bba65'),

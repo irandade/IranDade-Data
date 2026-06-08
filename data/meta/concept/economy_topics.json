@@ -3,300 +3,300 @@
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3166ba4335",
       "name": "تولید ناخالص داخلی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61523cd94cbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e326abfb10d",
       "name": "رشد اقتصادی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61523cd94cbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e33dc3094b2",
       "name": "بهره‌وری",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61523cd94cbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3499fa9410",
       "name": "تشکیل سرمایه",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61523cd94cbe"
     },
 
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e350eddb322",
       "name": "اشتغال",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615381135f7c"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e36ef126129",
       "name": "بیکاری",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615381135f7c"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3797204297",
       "name": "مشارکت اقتصادی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615381135f7c"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e38dee0b85a",
       "name": "دستمزد",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615381135f7c"
     },
 
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3949330eaf",
       "name": "درآمد خانوار",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615474e95dbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3a938bacdd",
       "name": "هزینه خانوار",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615474e95dbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3b241b3f5e",
       "name": "مصرف",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615474e95dbe"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3c9295464c",
       "name": "قدرت خرید",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615474e95dbe"
     },
 
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3d7c37d589",
       "name": "فقر",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61553bf9676f"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3ef4a325cd",
       "name": "نابرابری درآمد",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61553bf9676f"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e3f0532b824",
       "name": "توزیع ثروت",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61553bf9676f"
     },
 
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e406eb4b2d7",
       "name": "تورم",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61566b093458"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e41707baa17",
       "name": "قیمت مصرف‌کننده",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61566b093458"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e427672a8d5",
       "name": "قیمت تولیدکننده",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61566b093458"
     },
 
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e436fbf5035",
       "name": "نقدینگی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61576afd3355"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e448d551375",
       "name": "پایه پولی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61576afd3355"
     },
     {
       "concept_uid": "019e871c-48a7-73c4-aeec-8e45337868ee",
       "name": "حجم پول",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-61576afd3355"
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6158ec6c5db4",
       "name": "بانکداری و اعتبار",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88b7e10bd117",
       "name": "تسهیلات بانکی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6158ec6c5db4"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88b81b6f2065",
       "name": "نرخ بهره",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6158ec6c5db4"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88b9bf6d9645",
       "name": "نرخ نکول",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6158ec6c5db4"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-6159d73b48e9",
       "name": "بازار سرمایه",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88ba64e0c3fe",
       "name": "شاخص بورس",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6159d73b48e9"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88bbac5528cc",
       "name": "ارزش معاملات",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6159d73b48e9"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88bc314b2f99",
       "name": "ارزش بازار",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-6159d73b48e9"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-615a0be99d6a",
       "name": "ارز و تراز پرداخت‌ها",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88bdb37825cc",
       "name": "نرخ ارز",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615a0be99d6a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88beac16b1ff",
       "name": "ذخایر ارزی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615a0be99d6a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88bf7005239f",
       "name": "تراز پرداخت‌ها",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615a0be99d6a"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-615bd3606bec",
       "name": "تجارت خارجی",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c0a47c7fda",
       "name": "صادرات نفتی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615bd3606bec"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c112393cd7",
       "name": "صادرات غیرنفتی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615bd3606bec"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c22eac4c5c",
       "name": "واردات کالا",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615bd3606bec"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-615c1dac4db1",
       "name": "سرمایه‌گذاری",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c3ce6f42ee",
       "name": "سرمایه‌گذاری داخلی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615c1dac4db1"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c48e3c9b41",
       "name": "سرمایه‌گذاری خارجی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615c1dac4db1"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-615d08d640f3",
       "name": "مالیه عمومی",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c5a154da0e",
       "name": "بودجه دولت",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615d08d640f3"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c60134fe75",
       "name": "کسری بودجه",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615d08d640f3"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c78f8406fa",
       "name": "بدهی عمومی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615d08d640f3"
     },
 
     {
       "concept_uid": "019e871a-83b1-706c-b055-615fe7bca62c",
       "name": "بخش‌های اقتصادی",
-      "level_type_code": "SDO",
+      "level_type": "SDO",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c8180c4527",
       "name": "کشاورزی",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615fe7bca62c"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88c997f528f0",
       "name": "صنعت",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615fe7bca62c"
     },
     {
       "concept_uid": "019e871d-7db0-732e-a783-88cabec262b7",
       "name": "خدمات",
-      "level_type_code": "TOP",
+      "level_type": "TOP",
       "parent_concept_uid": "019e871a-83b1-706c-b055-615fe7bca62c"
     }
   ]

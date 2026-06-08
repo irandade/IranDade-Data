@@ -49,14 +49,14 @@
       "format": "date-time",
       "description": "End of validity period"
     },
-    "geography_dim_type_code": {
+    "dim_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
-      "enum": ["CON", "COU", "STA", "CTY", "CIT"],
-      "description": "Geography dimension type: CON=Continent, COU=Country, STA=State/Province, CTY=County, CIT=City"
+      "enum": ["CON", "COU", "SBC", "CTY", "CIT"],
+      "description": "Geography dimension type: CON=Continent, COU=Country, SBC=SubCountry, CTY=County, CIT=City"
     },
-    "state_type_code": {
+    "sub_country_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -73,7 +73,7 @@
     "geography_dimension_uid",
     "name_fa",
     "name_en",
-    "geography_dim_type_code"
+    "dim_type"
   ],
   "additionalProperties": false
 }

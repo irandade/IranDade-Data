@@ -66,14 +66,14 @@
       "format": "date-time",
       "description": "Datetime value representing middle of this period"
     },
-    "calendar_type_code": {
+    "calendar_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
       "enum": ["GRG", "JAL", "LUN"],
       "description": "Calendar type: GRG=Gregorian, JAL=Jalali, LUN=Lunar"
     },
-    "time_dimension_type_code": {
+    "time_dimension_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -89,8 +89,8 @@
   "required": [
     "time_dimension_uid",
     "name",
-    "calendar_type_code",
-    "time_dimension_type_code"
+    "calendar_type",
+    "time_dimension_type"
   ],
   "additionalProperties": false
 }

@@ -8,7 +8,7 @@
       "unit_coefficient": 1,
       "description": "",
       "value_type_code": "DEC",
-      "currency_type_code": null
+      "currency_type": null
     }
   ]
 }

@@ -25,21 +25,21 @@
       "format": "uuid",
       "description": "FK to series this observation belongs to"
     },
-    "observation_type_code": {
+    "observation_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
       "enum": ["OBS", "EST"],
       "description": "Observation type: OBS=Observed, EST=Estimated"
     },
-    "formality_type_code": {
+    "formality_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
       "enum": ["FRM", "SFM", "INF", "MIX"],
       "description": "Formality type: FRM=Formal, SFM=Semiformal, INF=Informal, MIX=Mixed"
     },
-    "review_status_type_code": {
+    "review_status_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -70,7 +70,9 @@
   "required": [
     "observation_uid",
     "series_uid",
-    "observation_type_code"
+    "observation_type",
+    "formality_type",
+    "review_status_type"
   ],
   "additionalProperties": false
 }

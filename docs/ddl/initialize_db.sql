@@ -20,8 +20,8 @@ CREATE TABLE geography_dimension
     code                           VARCHAR(255),
     valid_start_at                 TIMESTAMP WITH TIME ZONE,
     valid_end_at                   TIMESTAMP WITH TIME ZONE,
-    geography_dim_type_code        VARCHAR(3)               NOT NULL,
-    state_type_code                VARCHAR(3),
+    dim_type        VARCHAR(3)               NOT NULL,
+    sub_country_type                VARCHAR(3),
     parent_geography_dimension_uid UUID                     REFERENCES geography_dimension (geography_dimension_uid) ON DELETE SET NULL
 );
 
@@ -44,8 +44,8 @@ CREATE TABLE time_dimension
     day_of_week_value         INTEGER,
     date_value                DATE,
     datetime_value            TIMESTAMP WITH TIME ZONE,
-    calendar_type_code        VARCHAR(3)               NOT NULL,
-    time_dimension_type_code  VARCHAR(3)               NOT NULL,
+    calendar_type        VARCHAR(3)               NOT NULL,
+    time_dimension_type  VARCHAR(3)               NOT NULL,
     parent_time_dimension_uid UUID                     REFERENCES time_dimension (time_dimension_uid) ON DELETE SET NULL
 );
 
@@ -92,7 +92,7 @@ CREATE TABLE concept
     alt_name1          VARCHAR(255)             NOT NULL,
     alt_name2          VARCHAR(255)             NOT NULL,
     alt_name3          VARCHAR(255)             NOT NULL,
-    level_type_code    VARCHAR(3)               NOT NULL,
+    level_type    VARCHAR(3)               NOT NULL,
 
     description        TEXT,
     parent_concept_uid UUID                     REFERENCES concept (concept_uid) ON DELETE SET NULL
@@ -109,10 +109,10 @@ CREATE TABLE measurement_unit
     name               VARCHAR(255)             NOT NULL,
     alt_name           VARCHAR(255)             NOT NULL,
     unit_coefficient   INTEGER                           DEFAULT 1,
-    unit_type_code     VARCHAR(3)               NOT NULL,
+    unit_type     VARCHAR(3)               NOT NULL,
     base_year          INTEGER,
     description        TEXT,
-    currency_type_code VARCHAR(3) NULL
+    currency_type VARCHAR(3) NULL
 
 );
 
@@ -178,8 +178,8 @@ CREATE TABLE series
     created_by               VARCHAR(255)             NOT NULL,
     name                     VARCHAR(255)             NOT NULL,
     description              TEXT,
-    formality_type_code      VARCHAR(3)               NOT NULL,
-    time_dimension_type_code VARCHAR(3)               NOT NULL,
+    formality_type      VARCHAR(3)               NOT NULL,
+    time_dimension_type VARCHAR(3)               NOT NULL,
     indicator_uid            UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
     measurement_unit_uid         UUID                     NOT NULL REFERENCES measurement_unit (measurement_unit_uid) ON DELETE RESTRICT
 );
@@ -212,7 +212,7 @@ CREATE TABLE source_document
     created_by      VARCHAR(255)             NOT NULL,
     url             VARCHAR(2048),
     os_path         VARCHAR(1024),
-    source_type_code VARCHAR(3)              NOT NULL,
+    source_type VARCHAR(3)              NOT NULL,
     fetched_at      TIMESTAMP WITH TIME ZONE,
     organization_id UUID                     REFERENCES organization (organization_id) ON DELETE SET NULL
 );
@@ -227,9 +227,9 @@ CREATE TABLE observation
     created_by              VARCHAR(255)             NOT NULL,
     value           DECIMAL(28, 10),
     series_uid              UUID                     NOT NULL REFERENCES series (series_uid) ON DELETE CASCADE,
-    observation_type_code   VARCHAR(3)               NOT NULL,
-    formality_type_code     VARCHAR(3),
-    review_status_type_code VARCHAR(3),
+    observation_type   VARCHAR(3)               NOT NULL,
+    formality_type     VARCHAR(3)               NOT NULL,
+    review_status_type VARCHAR(3)               NOT NULL,
     published_at            TIMESTAMP WITH TIME ZONE,
     geography_dimension_uid UUID                     REFERENCES geography_dimension (geography_dimension_uid) ON DELETE SET NULL,
     time_dimension_uid      UUID                     REFERENCES time_dimension (time_dimension_uid) ON DELETE SET NULL,

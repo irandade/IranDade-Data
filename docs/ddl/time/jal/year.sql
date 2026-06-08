@@ -4,7 +4,7 @@
 
 
 INSERT INTO time_dimension (
-  time_dimension_uid, created_at, created_by, name, description, century_value, year_value, date_value, datetime_value, calendar_type_code, time_dimension_type_code, parent_time_dimension_uid
+  time_dimension_uid, created_at, created_by, name, description, century_value, year_value, date_value, datetime_value, calendar_type, time_dimension_type, parent_time_dimension_uid
 ) VALUES
   ('019e170d-a077-74a9-82e9-1b775d6541f8', NOW(), 'system', '۱', '۱ سال', 1, 1, '0622-09-24', '0622-09-24 12:00:00+00', 'JAL', 'YEA', '019e1708-1629-701b-b30a-e231d6d8c8fa'),
   ('019e170d-a078-713d-b5ce-89cbf7ae6e2c', NOW(), 'system', '۲', '۲ سال', 1, 2, '0623-09-25', '0623-09-25 12:00:00+00', 'JAL', 'YEA', '019e1708-1629-701b-b30a-e231d6d8c8fa'),

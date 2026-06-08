@@ -4,7 +4,7 @@
 
 
 INSERT INTO time_dimension (
-  time_dimension_uid, created_at, created_by, name, description, century_value, year_value, date_value, datetime_value, calendar_type_code, time_dimension_type_code, parent_time_dimension_uid
+  time_dimension_uid, created_at, created_by, name, description, century_value, year_value, date_value, datetime_value, calendar_type, time_dimension_type, parent_time_dimension_uid
 ) VALUES
   ('019df840-a16e-72e1-b336-d3ffe102a121', NOW(), 'system', 'Century 0', 'Years 0-99', 0, 50, '0050-07-02', '0050-07-02 00:00:00+00', 'GRG', 'CEN', NULL),
   ('019df840-a16e-72e1-b336-d4008f1248f5', NOW(), 'system', 'Century 1', 'Years 100-199', 1, 150, '0150-07-02', '0150-07-02 00:00:00+00', 'GRG', 'CEN', NULL),

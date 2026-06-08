@@ -6,7 +6,7 @@
       "alt_name1": "Economic Wellbeing",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "داده‌های مرتبط با اقتصاد، رفاه و معیشت"
     },
     {
@@ -15,7 +15,7 @@
       "alt_name1": "Population and Society",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "داده‌های جمعیتی، اجتماعی و خانوار"
     },
     {
@@ -24,7 +24,7 @@
       "alt_name1": "Human Capital",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "داده‌های آموزشی، سلامت و توسعه انسانی"
     },
     {
@@ -33,7 +33,7 @@
       "alt_name1": "Governance",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "دولت، قانون، بودجه و حکمرانی"
     },
     {
@@ -42,7 +42,7 @@
       "alt_name1": "Infrastructure and Environment",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "انرژی، حمل‌ونقل، محیط زیست و منابع"
     },
     {
@@ -51,62 +51,62 @@
       "alt_name1": "Production and Innovation",
       "alt_name2": "",
       "alt_name3": "",
-      "level_type_code": "CLS",
+      "level_type": "CLS",
       "description": "صنعت، کشاورزی، فناوری و نوآوری"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
       "name": "اقتصاد",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "شاخص‌های اقتصادی کشور",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538120d584e8"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538848803f4e",
       "name": "رفاه",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "شاخص‌های رفاه و کیفیت زندگی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-538120d584e8"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-53899223f978",
       "name": "جمعیت",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "ساختار و پویایی جمعیت",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53825080f046"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181",
       "name": "جامعه",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "مسائل اجتماعی و سرمایه اجتماعی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53825080f046"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538b90ccd095",
       "name": "آموزش",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "آموزش عمومی و عالی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53831e9bba16"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538c46372fae",
       "name": "سلامت",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "سلامت و بهداشت",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53831e9bba16"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538df87375a8",
       "name": "سرمایه انسانی",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "مهارت، پژوهش و نوآوری انسانی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53831e9bba16"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-538edf3f8228",
       "name": "حکمرانی",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "کیفیت حکمرانی و نهادها",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-5384de014eed"
     },
@@ -114,35 +114,35 @@
     {
       "concept_uid": "019e8718-5e78-76ca-b683-5390f7546dab",
       "name": "زیرساخت",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "حمل‌ونقل و خدمات زیربنایی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53851a4a69fa"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4",
       "name": "انرژی",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "نفت، گاز، برق و انرژی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53851a4a69fa"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-5392c83f01b7",
       "name": "محیط زیست",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "منابع طبیعی و محیط زیست",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-53851a4a69fa"
     },
     {
       "concept_uid": "019e8718-5e78-76ca-b683-5393765bc0be",
       "name": "تولید",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "صنعت، معدن و کشاورزی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-5386d7c56884"
     },
     {
       "concept_uid": "019e8718-5e79-72eb-a828-fb3139b10b72",
       "name": "فناوری و کسب‌وکار",
-      "level_type_code": "DOM",
+      "level_type": "DOM",
       "description": "فناوری، نوآوری و کارآفرینی",
       "parent_concept_uid": "019e8718-5e78-76ca-b683-5386d7c56884"
     }

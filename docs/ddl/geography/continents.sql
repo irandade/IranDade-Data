@@ -1,5 +1,5 @@
 -- Geography Dimension - Continents
--- geography_dim_type_code: CON (Continent)
+-- dim_type: CON (Continent)
 -- All continents are top-level entries (parent_geography_dimension_uid IS NULL)
 
 INSERT INTO geography_dimension (
@@ -12,8 +12,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df753-5e15-7542-81c0-c387081f4f19', NOW(), 'system', 'آفریقا', 'Africa', 'قاره آفریقا', 'African continent', NOW(), NULL, 'CON', NULL, NULL),

@@ -1,5 +1,5 @@
 -- Geography Dimension - Countries
--- geography_dim_type_code: COU (Country)
+-- dim_type: COU (Country)
 -- Each country is linked to its parent continent via parent_geography_dimension_uid
 
 -- Africa Countries
@@ -13,8 +13,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd4-70d9-a87b-0878c7070175', NOW(), 'system', 'الجزایر', 'Algeria', 'الجزایر (قاره آفریقا)', 'Algeria (Africa)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c387081f4f19'),
@@ -83,8 +83,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd4-70d9-a87b-08ae19888a26', NOW(), 'system', 'افغانستان', 'Afghanistan', 'افغانستان (قاره آسیا)', 'Afghanistan (Asia)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c389975de37f'),
@@ -149,8 +149,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd4-70d9-a87b-08e0ee53d10d', NOW(), 'system', 'آلبانی', 'Albania', 'آلبانی (قاره اروپا)', 'Albania (Europe)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c38a6f4276e1'),
@@ -209,8 +209,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd5-71ea-9fc7-b52730ebb7f7', NOW(), 'system', 'آنتیگوا و باربودا', 'Antigua and Barbuda', 'آنتیگوا و باربودا (قاره آمریکای شمالی)', 'Antigua and Barbuda (North America)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c38b71908300'),
@@ -248,8 +248,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd5-71ea-9fc7-b53e1b46918f', NOW(), 'system', 'آرژانتین', 'Argentina', 'آرژانتین (قاره آمریکای جنوبی)', 'Argentina (South America)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c38d09301c51'),
@@ -276,8 +276,8 @@ INSERT INTO geography_dimension (
     description_en,
     valid_start_at,
     valid_end_at,
-    geography_dim_type_code,
-    state_type_code,
+    dim_type,
+    sub_country_type,
     parent_geography_dimension_uid
 ) VALUES
     ('019df757-4fd5-71ea-9fc7-b54a52453468', NOW(), 'system', 'استرالیا', 'Australia', 'استرالیا (قاره اقیانوسیه)', 'Australia (Oceania)', NOW(), NULL, 'COU', NULL, '019df753-5e15-7542-81c0-c38c95584f8a'),

@@ -26,7 +26,7 @@
       "maxLength": 1024,
       "description": "Local file system path"
     },
-    "source_type_code": {
+    "source_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -46,7 +46,7 @@
   },
   "required": [
     "source_id",
-    "source_type_code"
+    "source_type"
   ],
   "additionalProperties": false
 }

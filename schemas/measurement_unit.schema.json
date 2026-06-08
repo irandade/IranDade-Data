@@ -31,7 +31,7 @@
       "default": 1,
       "description": "Multiplier for unit conversion (e.g. 1000 for thousands)"
     },
-    "unit_type_code": {
+    "unit_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -46,7 +46,7 @@
       "type": "string",
       "description": "Description of the measure"
     },
-    "currency_type_code": {
+    "currency_type": {
       "type": "string",
       "minLength": 3,
       "maxLength": 3,
@@ -58,7 +58,7 @@
     "measurement_unit_uid",
     "name",
     "alt_name",
-    "unit_type_code"
+    "unit_type"
   ],
   "additionalProperties": false
 }
