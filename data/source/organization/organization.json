@@ -1,0 +1,12 @@
+{
+  "organization": [
+    {
+      "organization_id": "019ea734-9bca-75ed-86d9-51d87a860a34",
+      "created_by": "system",
+      "name": "بانک مرکزی جمهوری اسلامی ایران",
+      "description": "Central Bank of the Islamic Republic of Iran",
+      "is_domestic": true,
+      "website": "https://www.cbi.ir"
+    }
+  ]
+}

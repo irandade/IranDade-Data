@@ -1,0 +1,40 @@
+{
+  "measurement_unit": [
+    {
+      "measurement_unit_uid": "019ea6c0-c9a7-7441-ab42-1037a4f74cfb",
+      "name": "ریال",
+      "alt_name": "IIR",
+      "unit_type": "IIR",
+      "unit_coefficient": 1,
+      "description": "ریال ایران",
+      "base_year": 0
+    },
+    {
+      "measurement_unit_uid": "019ea6c0-c9a9-7cf2-b94e-9cac56c077b4",
+      "name": "تومان",
+      "alt_name": "TOMAN",
+      "unit_type": "IIR",
+      "unit_coefficient": 10,
+      "description": "ریال ایران",
+      "base_year": 0
+    },
+    {
+      "measurement_unit_uid": "019ea6c2-095a-76f1-af03-8a308544a1e2",
+      "name": "میلیون تومان",
+      "alt_name": "Million Toman",
+      "unit_type": "IIR",
+      "unit_coefficient": 10000000,
+      "description": "ریال ایران",
+      "base_year": 0
+    },
+    {
+      "measurement_unit_uid": "019ea6c3-6871-776e-851d-5454e7bfdd9b",
+      "name": "هزار میلیارد تومان",
+      "alt_name": "thousand billion tomans",
+      "unit_type": "IIR",
+      "unit_coefficient": 10000000000000,
+      "description": "ریال ایران",
+      "base_year": 0
+    }
+  ]
+}

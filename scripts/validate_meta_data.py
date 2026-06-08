@@ -66,7 +66,7 @@ def main():
     passed = 0
     failed = 0
 
-    skip_files = {"data/meta/measurement_unit/sample.json"}
+    skip_files = {"data/meta/measurement_unit/economy_serries.json"}
 
     for subdir in meta_dirs:
         if not subdir.is_dir():

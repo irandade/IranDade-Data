@@ -114,7 +114,7 @@ package "Meta Data" as metadata_package{
       string name
       string alt_name
       UnitType unit_type
-      CurrencyType currency_type
+
       int unit_coefficient
       int base_year
       text description
@@ -319,7 +319,7 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
 
 
 ' Series
-' A data series grouping observations for an indicator
+' A data series grouping observation for an indicator
 ' measured in a specific unit with a defined formality
 ' and time granularity.
 
@@ -389,7 +389,7 @@ package "Data" as data_package{
 
 
 
-' from every dimensionclass just one dimenstion value can be relate to single observation
+' from every dimension class just one dimension value can be relate to single observation
     Observation "*" -- "*" DimensionValue
 
 

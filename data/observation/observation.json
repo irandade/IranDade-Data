@@ -1,0 +1,17 @@
+{
+  "observation": [
+    {
+      "observation_uid": "019ea734-9bca-75ed-86d9-51d7f805f55d",
+      "created_by": "system",
+      "value": 8571234567890.50,
+      "series_uid": "0196e047-f843-7f85-93b6-9e0df2c2a921",
+      "observation_type": "OBS",
+      "formality_type": "FRM",
+      "review_status_type": "REV",
+      "published_at": "2024-04-15T10:00:00+03:30",
+      "geography_dimension_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "time_dimension_uid": "019e1b50-c304-7568-845a-70df2c89f813",
+      "source_document_uid": "019ea734-9bca-75ed-86d9-51d95a8820c2"
+    }
+  ]
+}

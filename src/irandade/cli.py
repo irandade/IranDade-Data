@@ -23,7 +23,7 @@ def validate_meta():
 
 @validate_app.command("data")
 def validate_data():
-    """Validate basic data (not implemented yet)"""
+    """Placeholder — no basic data validation implemented yet"""
     typer.echo("validate data: not implemented")
 
 
@@ -51,6 +51,20 @@ def show_dimension():
     """Display dimension classes and values in tables"""
     from irandade.display import show_dimensions
     show_dimensions()
+
+
+@show_app.command("indicator")
+def show_indicator_cmd():
+    """Display indicators in a table"""
+    from irandade.display import show_indicator
+    show_indicator()
+
+
+@show_app.command("series")
+def show_series_cmd():
+    """Display series in a table"""
+    from irandade.display import show_series
+    show_series()
 
 
 app.add_typer(validate_app, name="v", hidden=True)

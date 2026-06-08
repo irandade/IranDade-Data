@@ -1,0 +1,10 @@
+{
+  "indicator": [
+    {
+      "indicator_uid": "019ea6c8-24f9-7423-95f4-cfc9838937b3",
+      "name": "نقدینگی",
+      "description": "حجم نقدینگی",
+      "concept_uid": "019e871c-48a7-73c4-aeec-8e436fbf5035"
+    }
+  ]
+}
