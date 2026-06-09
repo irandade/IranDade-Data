@@ -29,11 +29,33 @@
       "type": "string",
       "format": "uuid",
       "description": "FK to concept this indicator belongs to"
+    },
+    "formality_type": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["FRM", "SFM", "INF", "MIX"],
+      "description": "Formality type: FRM=Formal, SFM=Semiformal, INF=Informal, MIX=Mixed"
+    },
+    "time_dimension_type": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3,
+      "enum": ["CEN", "YEA", "MON", "QRT", "WEE", "DAY"],
+      "description": "Time granularity: CEN=Century, YEA=Year, MON=Month, QRT=Quarter, WEE=Week, DAY=Day"
+    },
+    "measurement_unit_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to measurement_unit"
     }
   },
   "required": [
     "indicator_uid",
-    "name"
+    "name",
+    "formality_type",
+    "time_dimension_type",
+    "measurement_unit_uid"
   ],
   "additionalProperties": false
 }

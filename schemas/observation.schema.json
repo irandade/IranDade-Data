@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/07/schema#",
   "$id": "observation.schema.json",
   "title": "Observation",
-  "description": "A single data point — a numeric value for a series at a point in time and place",
+  "description": "A single data point — a numeric value for an indicator at a point in time and place",
   "type": "object",
   "properties": {
     "observation_uid": {
@@ -20,10 +20,10 @@
       "type": "number",
       "description": "Numeric value of the observation"
     },
-    "series_uid": {
+    "indicator_uid": {
       "type": "string",
       "format": "uuid",
-      "description": "FK to series this observation belongs to"
+      "description": "FK to indicator this observation belongs to"
     },
     "observation_type": {
       "type": "string",
@@ -69,7 +69,7 @@
   },
   "required": [
     "observation_uid",
-    "series_uid",
+    "indicator_uid",
     "observation_type",
     "formality_type",
     "review_status_type"

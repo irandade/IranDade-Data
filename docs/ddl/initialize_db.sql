@@ -166,26 +166,19 @@ CREATE TABLE indicator
     description   TEXT,
     concept_uid   UUID                     REFERENCES concept (concept_uid) ON DELETE SET NULL
 
-);
-
-CREATE INDEX idx_indicator_concept ON indicator (concept_uid);
 
 
-CREATE TABLE series
-(
-    series_uid               UUID PRIMARY KEY,
-    created_at               TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    created_by               VARCHAR(255)             NOT NULL,
-    name                     VARCHAR(255)             NOT NULL,
-    description              TEXT,
     formality_type      VARCHAR(3)               NOT NULL,
     time_dimension_type VARCHAR(3)               NOT NULL,
-    indicator_uid            UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
     measurement_unit_uid         UUID                     NOT NULL REFERENCES measurement_unit (measurement_unit_uid) ON DELETE RESTRICT
 );
 
-CREATE INDEX idx_series_indicator ON series (indicator_uid);
-CREATE INDEX idx_series_measurement_unit ON series (measurement_unit_uid);
+
+CREATE INDEX idx_indicator_measurement_unit ON indicator (measurement_unit_uid);
+
+
+CREATE INDEX idx_indicator_concept ON indicator (concept_uid);
+
 
 
 
@@ -226,7 +219,7 @@ CREATE TABLE observation
     created_at              TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by              VARCHAR(255)             NOT NULL,
     value           DECIMAL(28, 10),
-    series_uid              UUID                     NOT NULL REFERENCES series (series_uid) ON DELETE CASCADE,
+    indicator_uid              UUID                     NOT NULL REFERENCES indicator (indicator_uid) ON DELETE CASCADE,
     observation_type   VARCHAR(3)               NOT NULL,
     formality_type     VARCHAR(3)               NOT NULL,
     review_status_type VARCHAR(3)               NOT NULL,
@@ -236,7 +229,7 @@ CREATE TABLE observation
     source_document_uid     UUID                     REFERENCES source_document (source_id) ON DELETE SET NULL
 );
 
-CREATE INDEX idx_observation_series ON observation (series_uid);
+CREATE INDEX idx_observation_indicator ON observation (indicator_uid);
 CREATE INDEX idx_observation_geo ON observation (geography_dimension_uid);
 CREATE INDEX idx_observation_time ON observation (time_dimension_uid);
 CREATE INDEX idx_observation_source ON observation (source_document_uid);

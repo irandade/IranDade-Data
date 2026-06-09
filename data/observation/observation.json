@@ -4,7 +4,7 @@
       "observation_uid": "019ea734-9bca-75ed-86d9-51d7f805f55d",
       "created_by": "system",
       "value": 8571234567890.50,
-      "series_uid": "0196e047-f843-7f85-93b6-9e0df2c2a921",
+      "indicator_uid": "019ea6c8-24f9-7423-95f4-cfc9838937b3",
       "observation_type": "OBS",
       "formality_type": "FRM",
       "review_status_type": "REV",

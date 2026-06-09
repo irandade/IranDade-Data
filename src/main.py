@@ -1,7 +1,7 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from irandade.validator import run_meta_validation
-from irandade.display import show_concepts, show_measurement_units, show_dimensions, show_indicator, show_series
+from irandade.display import show_concepts, show_measurement_units, show_dimensions, show_indicator
 from irandade.time_lookup import lookup_and_show
 
 console = Console()
@@ -24,7 +24,6 @@ def menu_show():
     console.print("  2) measure [bold yellow]m[/bold yellow]")
     console.print("  3) dimension [bold yellow]d[/bold yellow]")
     console.print("  4) indicator [bold yellow]i[/bold yellow]")
-    console.print("  5) series [bold yellow]s[/bold yellow]")
     sub = Prompt.ask("Choice").strip().lower()
     if sub in ("1", "c"):
         show_concepts()
@@ -34,8 +33,6 @@ def menu_show():
         show_dimensions()
     elif sub in ("4", "i"):
         show_indicator()
-    elif sub in ("5", "s"):
-        show_series()
 
 
 def menu_time():

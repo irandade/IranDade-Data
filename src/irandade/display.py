@@ -122,37 +122,6 @@ def show_indicator():
     console.print(table)
 
 
-def show_series():
-    records = _load_all("series")
-    if not records:
-        console.print("[yellow]No series found[/yellow]")
-        return
-    indicators = _load_all("indicator")
-    indicator_by_uid = {r.get("indicator_uid", ""): r.get("name", "") for r in indicators}
-    units = _load_all("measurement_unit")
-    unit_by_uid = {r.get("measurement_unit_uid", ""): r.get("name", "") for r in units}
-    FORMALITY_LABELS = {"FRM": "Formal", "SFM": "Semiformal", "INF": "Informal", "MIX": "Mixed"}
-    TIME_GRAIN_LABELS = {"CEN": "Century", "YEA": "Year", "MON": "Month", "QRT": "Quarter", "WEE": "Week", "DAY": "Day"}
-    table = Table(title="Series")
-    table.add_column("UUID")
-    table.add_column("Name", style="cyan")
-    table.add_column("Description")
-    table.add_column("Formality", style="magenta")
-    table.add_column("Grain", style="magenta")
-    table.add_column("Indicator", style="yellow")
-    table.add_column("Unit", style="green")
-    for r in records:
-        table.add_row(
-            _wrap_cell(r.get("series_uid", "")[-12:]),
-            _wrap_cell(r.get("name", "")),
-            _wrap_cell(r.get("description", "") or ""),
-            _wrap_cell(FORMALITY_LABELS.get(r.get("formality_type", ""), r.get("formality_type", ""))),
-            _wrap_cell(TIME_GRAIN_LABELS.get(r.get("time_dimension_type", ""), r.get("time_dimension_type", ""))),
-            _wrap_cell(indicator_by_uid.get(r.get("indicator_uid", ""), "")),
-            _wrap_cell(unit_by_uid.get(r.get("measurement_unit_uid", ""), "")),
-        )
-    console.print(table)
-
 
 def show_dimensions():
     classes = _load_all("dimension_class")

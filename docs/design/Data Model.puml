@@ -301,27 +301,24 @@ DayDimension "n" -up- "0-1" TimeDimension : jal_month
 ' Indicator
 ' A measurable statistical indicator associated with a concept.
 ' Indicators define what is observed or reported and may
-' be represented by one or more measures over time  in series.
-' list of data will be stored in observation via seriess
+' be represented by one or more measures over time
+' list of data will be stored in observation
 '
 ' Examples:
-' - Inflation Rate[indicator], cbi,amar[series], specific number in time, category[observation]
+' - Inflation Rate[indicator],  specific number in time, category[observation]
 ' - Unemployment Rate
 ' - GDP Growth Rate
     class Indicator<<BE>> #lightgreen{
         uuid indicator_uid
         str name
         str description
+        FormalityType formality_type
+        TimeDimensionType time_dimension_type
     }
 
    DimensionValue "n"--"1" DimensionClass
    DimensionValue "n"--"0-1" DimensionValue :parent/child
 
-
-' Series
-' A data series grouping observation for an indicator
-' measured in a specific unit with a defined formality
-' and time granularity.
 
 
 }
@@ -333,7 +330,7 @@ package "Data" as data_package{
 
 
 ' Observation
-' A quantitative observation of a series for a specific
+' A quantitative observation of a indicator for a specific
 ' time period and dimensional context.
 '
 ' A Observation contains the actual reported value together with
@@ -375,14 +372,6 @@ package "Data" as data_package{
 
 
 
-    class Series<<BE>> #skyblue{
-        uuid series_uid
-        str name
-        str description
-        FormalityType formality_type
-        TimeDimensionType time_dimension_type
-    }
-
 
 
 
@@ -396,7 +385,7 @@ package "Data" as data_package{
     Observation "n"-down-"0-1" GeographyDimension
     Observation "n"-down-"0-1" TimeDimension
 
-    MeasurementUnit "1"--"n" Series
+    MeasurementUnit "1"--"n" Indicator
 
     Observation "n"--"0-1" SourceDocument
 }
@@ -406,11 +395,11 @@ package "Data" as data_package{
 
 
 
-    Series "1" -- "*" Observation
+    Indicator "1" -- "*" Observation
 
 
 
-    Indicator "1"-up-"*" Series
+
     Indicator "*"-down-"1" Concept
 
 @enduml

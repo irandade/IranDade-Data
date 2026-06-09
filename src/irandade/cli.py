@@ -60,12 +60,5 @@ def show_indicator_cmd():
     show_indicator()
 
 
-@show_app.command("series")
-def show_series_cmd():
-    """Display series in a table"""
-    from irandade.display import show_series
-    show_series()
-
-
 app.add_typer(validate_app, name="v", hidden=True)
 app.add_typer(show_app, name="s", hidden=True)
