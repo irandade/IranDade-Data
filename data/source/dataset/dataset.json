@@ -1,0 +1,108 @@
+{
+  "dataset": [
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0faf38aac851",
+      "created_by": "system",
+      "name": "گزارش و ترازنامه اقتصادی",
+      "description": " مجلات و مطالعات ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb07f1a3c7a",
+      "created_by": "system",
+      "name": "نماگرهای اقتصادی",
+      "description": " مجلات و مطالعات ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb17513bad2",
+      "created_by": "system",
+      "name": "خلاصه تحولات اقتصادی کشور",
+      "description": " مجلات و مطالعات ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b8bfcb82a91",
+      "created_by": "system",
+      "name": "شاخص بهای کالاها و خدمات مصرفی",
+      "description": " آمار و داده ها » آمارهای اقتصادی » شاخص های قيمت  ",
+      "url": "https://cbi.ir/simplelist/1611.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b8c4784d336",
+      "created_by": "system",
+      "name": "شاخص قيمت كالاهای صادراتی",
+      "description": " آمار و داده ها » آمارهای اقتصادی » شاخص های قيمت  ",
+      "url": "https://cbi.ir/simplelist/1595.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b8db6d26fcc",
+      "created_by": "system",
+      "name": "شاخص بهای اجاره مسکن در مناطق شهری",
+      "description": " آمار و داده ها » آمارهای اقتصادی » شاخص های قيمت  ",
+      "url": "https://cbi.ir/simplelist/8009.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b8af94899b2",
+      "created_by": "system",
+      "name": "شاخص قيمت توليد كننده",
+      "description": " آمار و داده ها » آمارهای اقتصادی » شاخص های قيمت  ",
+      "url": "https://cbi.ir/simplelist/1890.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b8eae9c430a",
+      "created_by": "system",
+      "name": "بررسی بودجه خانوار",
+      "description": " آمار و داده ها » آمارهای اقتصادی ",
+      "url": "https://cbi.ir/simplelist/1600.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb240c0a53d",
+      "created_by": "system",
+      "name": "گزارش تحولات بازار معاملات مسکن در تهران",
+      "description": " آمار و داده ها » آمارهای اقتصادی ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb060-21db-753d-8903-7b908312d25a",
+      "created_by": "system",
+      "name": "نتايج بررسي فعاليت هاي ساختماني بخش خصوصي در مناطق شهري",
+      "description": " آمار و داده ها » آمارهای اقتصادی ",
+      "url": "https://cbi.ir/simplelist/4300.aspx",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb36782aafd",
+      "created_by": "system",
+      "name": "گزارش‌های فصلی و سالانه",
+      "description": " آمار و داده ها » آمارهای اقتصادی » بررسی كارگاه های بزرگ صنعتی كشور ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb49aecf1bd",
+      "created_by": "system",
+      "name": "سری زمانی شاخص‌های صنعت",
+      "description": " آمار و داده ها » آمارهای اقتصادی » بررسی كارگاه های بزرگ صنعتی كشور ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    },
+    {
+      "dataset_uid": "019eb067-6f84-77d0-99a4-0fb549a19116",
+      "created_by": "system",
+      "name": "مصارف و دریافت‌کنندگان ارز ترجیحی",
+      "description": " آمار و داده ها » آمارهای اقتصادی ",
+      "url": "",
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34"
+    }
+  ]
+}

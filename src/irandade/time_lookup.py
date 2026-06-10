@@ -3,7 +3,7 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 
-CAL_DIR = Path("data/basic")
+CAL_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "basic"
 console = Console()
 
 

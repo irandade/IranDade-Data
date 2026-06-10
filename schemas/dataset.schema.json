@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/07/schema#",
-  "$id": "organization.schema.json",
-  "title": "Organization",
-  "description": "A source organization that publishes economic or social data",
+  "$id": "dataset.schema.json",
+  "title": "Dataset",
+  "description": "A named collection of data documents, published by a publisher",
   "type": "object",
   "properties": {
-    "organization_uid": {
+    "dataset_uid": {
       "type": "string",
       "format": "uuid",
       "description": "UUID v7 primary key"
@@ -19,26 +19,27 @@
     "name": {
       "type": "string",
       "maxLength": 255,
-      "description": "Organization name"
+      "description": "Dataset name"
     },
     "description": {
       "type": "string",
-      "description": "Description of the organization"
+      "description": "Description of the dataset"
     },
-    "is_domestic": {
-      "type": "boolean",
-      "default": true,
-      "description": "Whether the organization is domestic (Iranian) or foreign"
-    },
-    "website": {
+    "url": {
       "type": "string",
-      "maxLength": 255,
-      "description": "Organization website URL"
+      "maxLength": 2048,
+      "description": "Dataset URL"
+    },
+    "publisher_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to publisher"
     }
   },
   "required": [
-    "organization_uid",
-    "name"
+    "dataset_uid",
+    "name",
+    "publisher_uid"
   ],
   "additionalProperties": false
 }

@@ -6,7 +6,7 @@ Data platform for Iranian economic/social indicators. Currently data modeling an
 
 - `docs/design/Data Model.puml` — **source of truth for schema design** (entities, attributes, enums with codes, relationships)
 - `docs/ddl/initialize_db.sql` — DDL derived from PUML
-- `schemas/*.schema.json` — 16 JSON Schema (draft-07) files derived from PUML
+- `schemas/*.schema.json` — 17 JSON Schema (draft-07) files derived from PUML
 
 ## Validation
 
@@ -14,11 +14,14 @@ Data platform for Iranian economic/social indicators. Currently data modeling an
 python3 scripts/validate_meta_data.py
 ```
 
-Auto-installs `jsonschema` if missing. Validates all `data/meta/<table>/*.json` against `schemas/<table>.schema.json`. Hardcoded skip of `data/meta/measurement_unit/sample.json`.
+Auto-installs `jsonschema` if missing. Validates all `data/<category>/<table>/*.json` against `schemas/<table>.schema.json`.
 
 ## Directory layout
 
-- `data/meta/<table>/` — seed data, validated against schemas; may be split across multiple files per table (all validated against same schema)
+- `data/meta/<table>/` — seed data (concept, dimension_class, dimension_value, indicator, measurement_unit), validated against schemas
+- `data/ontology/<table>/` — ontology data (organization), validated
+- `data/source/<table>/` — source data (dataset, publisher, source_document), validated
+- `data/observation/<table>/` — observation data (observation, observation_dimension_value_rel), validated
 - `data/basic/` — reference data (geography, calendars), section-based format (`"continents": [...]`), unvalidated
 - `schemas/` — JSON Schema per table matching DDL
 - `docs/ddl/` — master DDL + seed SQL per directory
@@ -45,9 +48,10 @@ Auto-installs `jsonschema` if missing. Validates all `data/meta/<table>/*.json` 
 
 Not yet configured. `pyproject.toml` is minimal.
 
-## Known schema/DDL inconsistencies
+## Resolved schema/DDL inconsistencies
 
 | Issue | Detail |
 |---|---|
-| `concept.alt_name1/2/3` | DDL has `NOT NULL`, schema does NOT require them |
-| `currency_exchange_rate` | Exists in PUML but not in DDL or schema |
+| `concept.alt_name1/2/3` | DDL has `NOT NULL`, schema does NOT require them; alt_name fields added as empty strings to seed data (87 records across 2 files) |
+| `currency_exchange_rate` | Removed from PUML; was not in DDL or schema |
+| `measurement_unit.currency_type` | Removed from DDL and schema; was not in PUML |

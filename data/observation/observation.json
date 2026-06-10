@@ -3,15 +3,28 @@
     {
       "observation_uid": "019ea734-9bca-75ed-86d9-51d7f805f55d",
       "created_by": "system",
-      "value": 8571234567890.50,
+      "value": 131845.3,
       "indicator_uid": "019ea6c8-24f9-7423-95f4-cfc9838937b3",
       "observation_type": "OBS",
       "formality_type": "FRM",
       "review_status_type": "REV",
       "published_at": "2024-04-15T10:00:00+03:30",
       "geography_dimension_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
-      "time_dimension_uid": "019e1b50-c304-7568-845a-70df2c89f813",
-      "source_document_uid": "019ea734-9bca-75ed-86d9-51d95a8820c2"
+      "time_dimension_uid": "019e1715-6cb5-7058-8fc9-ff540ccf1fe3",
+      "source_document_uid": "019eab76-e167-7281-968c-fdef34467cd0"
+    },
+    {
+      "observation_uid": "019eb084-28e1-74b8-a225-a47b0152c063",
+      "created_by": "system",
+      "value": 110588.0,
+      "indicator_uid": "019ea6c8-24f9-7423-95f4-cfc9838937b3",
+      "observation_type": "OBS",
+      "formality_type": "FRM",
+      "review_status_type": "REV",
+      "published_at": "2024-04-15T10:00:00+03:30",
+      "geography_dimension_uid": "019df757-4fd4-70d9-a87b-08bbfbf15e44",
+      "time_dimension_uid": "019e1715-6cb4-7591-b20a-310d4256fdd3",
+      "source_document_uid": "019eab76-e167-7281-968c-fdef34467cd0"
     }
   ]
 }

@@ -4,7 +4,12 @@ from jsonschema import validate, ValidationError
 from rich.console import Console
 from rich.markup import escape
 
-DATA_DIR = Path("data/meta")
+DATA_DIRS = [
+    Path("data/meta"),
+    Path("data/ontology"),
+    Path("data/source"),
+    Path("data/observation"),
+]
 SCHEMA_DIR = Path("schemas")
 SKIP_FILES: set[str] = set()
 
@@ -60,24 +65,26 @@ def validate_file(filepath: Path) -> bool:
 
 
 def run_meta_validation() -> bool:
-    meta_dirs = sorted(DATA_DIR.iterdir())
     total = passed = failed = 0
 
-    for subdir in meta_dirs:
-        if not subdir.is_dir():
+    for data_dir in DATA_DIRS:
+        if not data_dir.is_dir():
             continue
-        for json_file in sorted(subdir.glob("*.json")):
-            rel = str(json_file)
-            total += 1
-            console.print(f"\n{rel}")
-            if rel in SKIP_FILES:
-                console.print(f"  [yellow]- SKIP (user requested)[/yellow]")
+        for subdir in sorted(data_dir.iterdir()):
+            if not subdir.is_dir():
                 continue
-            if validate_file(json_file):
-                console.print(f"  [green]✓ PASS[/green]")
-                passed += 1
-            else:
-                failed += 1
+            for json_file in sorted(subdir.glob("*.json")):
+                rel = str(json_file)
+                total += 1
+                console.print(f"\n{rel}")
+                if rel in SKIP_FILES:
+                    console.print(f"  [yellow]- SKIP (user requested)[/yellow]")
+                    continue
+                if validate_file(json_file):
+                    console.print(f"  [green]✓ PASS[/green]")
+                    passed += 1
+                else:
+                    failed += 1
 
     console.print(f"\n{'=' * 40}")
     console.print(f"Total: {total}  Passed: {passed}  Failed: {failed}")

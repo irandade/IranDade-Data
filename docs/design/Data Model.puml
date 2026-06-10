@@ -24,22 +24,46 @@ package "Visualization" as visualization_package{
 }
 
 
+package "Ontology" as  ontology_pkg{
 
-
-package "Source" as source_pkg{
-
-    class Organization #linen{
-        uuid organization_id
+     class Organization #linen{
+        uuid organization_uid
         string name
         string description
         bool is_domestic
         string website
     }
 
+}
+
+
+
+package "Source" as source_pkg{
+
+
+
+    class DataSet #linen{
+        uuid dataset_uid
+        string name
+        string description
+
+        string url
+
+    }
+
+    class Publisher #linen{
+        uuid publisher_uid
+        string name
+        string description
+        bool is_domestic
+        string website
+
+
+    }
 
 
     class SourceDocument #linen{
-        uuid source_id
+        uuid source_document_uid
         string url
         string os_path
         SourceType source_type
@@ -56,7 +80,9 @@ package "Source" as source_pkg{
     }
 
 
-    SourceDocument "*"--"1" Organization
+    SourceDocument "*"--"1" Publisher
+    SourceDocument "*"--"1-0" DataSet
+    DataSet "*"--"1" Publisher
 }
 package Utils{
 
@@ -77,31 +103,6 @@ package Utils{
 
 
     }
-
-    enum   CurrencyType  #beige{
-        IIR<IIR>
-        USD<USD>
-    }
-
-
-
-
-    enum   CurrencyExchangeType #beige{
-        CB_MARKET<CBM>
-        FREE_MARKET<FRM>
-
-    }
-    class CurrencyExchangeRate <<ManagerMixin>>  #pink{
-        uuid currency_exchange_rate_uid
-        datetime rate_at
-        decimal value
-        CurrencyExchangeType : exchange_type
-        CurrencyType : base_currency_type
-        CurrencyType : quote_currency_type
-    }
-
-
-
 }
 
 

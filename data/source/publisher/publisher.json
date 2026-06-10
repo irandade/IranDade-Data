@@ -1,0 +1,94 @@
+{
+  "publisher": [
+    {
+      "publisher_uid": "019ea734-9bca-75ed-86d9-51d87a860a34",
+      "created_by": "system",
+      "name": "بانک مرکزی جمهوری اسلامی ایران",
+      "description": "Central Bank of the Islamic Republic of Iran",
+      "is_domestic": true,
+      "website": "https://www.cbi.ir"
+    },
+     {
+      "publisher_uid": "019eab5c-4039-7231-ad56-3d425bf124a5",
+      "created_by": "system",
+      "name": "خبرگزاری جمهوری اسلامی ایران",
+      "description": "Islamic Republic News Agency",
+      "is_domestic": true,
+      "website": "https://www.irna.ir/"
+    },
+     {
+      "publisher_uid": "019eab5d-70c2-72bc-80cc-204d02defe07",
+      "created_by": "system",
+      "name": "مرکز آمار ایران",
+      "description": "Statistical Centre of Iran",
+      "is_domestic": true,
+      "website": "https://amar.org.ir/"
+    },
+     {
+      "publisher_uid": "019eab72-e247-72b4-bae0-d2fe079a699e",
+      "created_by": "system",
+      "name": "سازمان حفاظت محیط زیست",
+      "description": "Department of Environment",
+      "is_domestic": true,
+      "website": "https://www.doe.ir/"
+    },
+     {
+      "publisher_uid": "019eab63-3b47-7bc5-a299-38e6bce225d1",
+      "created_by": "system",
+      "name": "خبرگزاری دانشجویان ایران",
+      "description": "Iranian Students' News Agency",
+      "is_domestic": true,
+      "website": "https://www.isna.ir/"
+    },
+     {
+      "publisher_uid": "019eab64-df67-75f2-8cd0-f927cd9dd412",
+      "created_by": "system",
+      "name": "خبرگزاری فارس",
+      "description": "Fars News Agency",
+      "is_domestic": true,
+      "website": "https://farsnews.ir/"
+    },
+     {
+      "publisher_uid": "019eab68-6f20-70aa-a4cb-e624b716f0bc",
+      "created_by": "system",
+      "name": "خبرگزاری تسنیم",
+      "description": "Tasnim News Agency",
+      "is_domestic": true,
+      "website": "https://tasnimnews.ir/"
+    },
+     {
+      "publisher_uid": "019eab6a-31f3-77d7-afdb-7475f23babfa",
+      "created_by": "system",
+      "name": "خبرگزاری مهر",
+      "description": "Mehr News Agency",
+      "is_domestic": true,
+      "website": "https://www.mehrnews.com/"
+    },
+     {
+      "publisher_uid": "019eab72-b0d8-78fa-ba27-269a5e01e7b3",
+      "created_by": "system",
+      "name": "شبکه خبری بانک و اقتصاد ایران",
+      "description": "Iran Bank and Economy News Agency",
+      "is_domestic": true,
+      "website": "https://www.ibena.ir/"
+    },
+     {
+      "publisher_uid": "019eab72-7fff-7330-9726-60961323681d",
+      "created_by": "system",
+      "name": "پایگاه خبری، تحلیلی تابناک",
+      "description": "Tabnak Professional News Site",
+      "is_domestic": true,
+      "website": "https://www.tabnak.ir/"
+    }
+,
+     {
+      "publisher_uid": "019eab84-a16e-72c6-81d4-c782cb2c2e7c",
+      "created_by": "system",
+      "name": "پایگاه خبری انتخاب",
+      "description": "Entekhab Professional News Site",
+      "is_domestic": true,
+      "website": "https://www.entekhab.ir/"
+    }
+
+  ]
+}

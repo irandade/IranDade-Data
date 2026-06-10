@@ -45,13 +45,6 @@
     "description": {
       "type": "string",
       "description": "Description of the measure"
-    },
-    "currency_type": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 3,
-      "enum": ["IIR", "USD"],
-      "description": "Currency type: IIR=Iranian Rial, USD=US Dollar"
     }
   },
   "required": [

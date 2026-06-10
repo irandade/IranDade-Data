@@ -1,0 +1,30 @@
+{
+  "organization": [
+    {
+      "organization_uid": "019ea734-9bca-75ed-86d9-51d87a860a34",
+      "created_by": "system",
+      "name": "بانک مرکزی جمهوری اسلامی ایران",
+      "description": "Central Bank of the Islamic Republic of Iran",
+      "is_domestic": true,
+      "website": "https://www.cbi.ir"
+    },
+
+     {
+      "organization_uid": "019eab5d-70c2-72bc-80cc-204d02defe07",
+      "created_by": "system",
+      "name": "مرکز آمار ایران",
+      "description": "Statistical Centre of Iran",
+      "is_domestic": true,
+      "website": "https://amar.org.ir/"
+    },
+     {
+      "organization_uid": "019eab72-e247-72b4-bae0-d2fe079a699e",
+      "created_by": "system",
+      "name": "سازمان حفاظت محیط زیست",
+      "description": "Department of Environment",
+      "is_domestic": true,
+      "website": "https://www.doe.ir/"
+    }
+
+  ]
+}

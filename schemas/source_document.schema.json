@@ -5,7 +5,7 @@
   "description": "A document from which observations are sourced — PDF, Excel, web page, etc.",
   "type": "object",
   "properties": {
-    "source_id": {
+    "source_document_uid": {
       "type": "string",
       "format": "uuid",
       "description": "UUID v7 primary key"
@@ -38,15 +38,21 @@
       "format": "date-time",
       "description": "When the document was fetched"
     },
-    "organization_id": {
+    "publisher_uid": {
       "type": "string",
       "format": "uuid",
-      "description": "FK to organization that published this document"
+      "description": "FK to publisher that published this document"
+    },
+    "dataset_uid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "FK to dataset this document belongs to"
     }
   },
   "required": [
-    "source_id",
-    "source_type"
+    "source_document_uid",
+    "source_type",
+    "publisher_uid"
   ],
   "additionalProperties": false
 }

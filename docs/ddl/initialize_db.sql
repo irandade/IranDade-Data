@@ -111,9 +111,7 @@ CREATE TABLE measurement_unit
     unit_coefficient   INTEGER                           DEFAULT 1,
     unit_type     VARCHAR(3)               NOT NULL,
     base_year          INTEGER,
-    description        TEXT,
-    currency_type VARCHAR(3) NULL
-
+    description        TEXT
 );
 
 
@@ -164,11 +162,8 @@ CREATE TABLE indicator
     created_by    VARCHAR(255)             NOT NULL,
     name          VARCHAR(255)             NOT NULL,
     description   TEXT,
-    concept_uid   UUID                     REFERENCES concept (concept_uid) ON DELETE SET NULL
-
-
-
-    formality_type      VARCHAR(3)               NOT NULL,
+    concept_uid          UUID                     REFERENCES concept (concept_uid) ON DELETE SET NULL,
+    formality_type       VARCHAR(3)               NOT NULL,
     time_dimension_type VARCHAR(3)               NOT NULL,
     measurement_unit_uid         UUID                     NOT NULL REFERENCES measurement_unit (measurement_unit_uid) ON DELETE RESTRICT
 );
@@ -188,7 +183,7 @@ CREATE INDEX idx_indicator_concept ON indicator (concept_uid);
 
 CREATE TABLE organization
 (
-    organization_id UUID PRIMARY KEY,
+    organization_uid UUID PRIMARY KEY,
     created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by      VARCHAR(255)             NOT NULL,
     name            VARCHAR(255)             NOT NULL,
@@ -198,19 +193,46 @@ CREATE TABLE organization
 );
 
 
+CREATE TABLE publisher
+(
+    publisher_uid UUID PRIMARY KEY,
+    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by    VARCHAR(255)             NOT NULL,
+    name          VARCHAR(255)             NOT NULL,
+    description   TEXT,
+    is_domestic   BOOLEAN                  NOT NULL DEFAULT TRUE,
+    website       VARCHAR(255)
+);
+
+
+CREATE TABLE dataset
+(
+    dataset_uid   UUID PRIMARY KEY,
+    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_by    VARCHAR(255)             NOT NULL,
+    name          VARCHAR(255)             NOT NULL,
+    description   TEXT,
+    url           VARCHAR(2048),
+    publisher_uid UUID                     NOT NULL REFERENCES publisher (publisher_uid) ON DELETE SET NULL
+);
+
+CREATE INDEX idx_dataset_publisher ON dataset (publisher_uid);
+
+
 CREATE TABLE source_document
 (
-    source_id       UUID PRIMARY KEY,
+    source_document_uid      UUID PRIMARY KEY,
     created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     created_by      VARCHAR(255)             NOT NULL,
     url             VARCHAR(2048),
     os_path         VARCHAR(1024),
     source_type VARCHAR(3)              NOT NULL,
     fetched_at      TIMESTAMP WITH TIME ZONE,
-    organization_id UUID                     REFERENCES organization (organization_id) ON DELETE SET NULL
+    publisher_uid UUID                     NOT NULL REFERENCES publisher (publisher_uid) ON DELETE SET NULL,
+    dataset_uid   UUID                     REFERENCES dataset (dataset_uid) ON DELETE SET NULL
 );
 
-CREATE INDEX idx_source_doc_org ON source_document (organization_id);
+CREATE INDEX idx_source_doc_publisher ON source_document (publisher_uid);
 
 
 CREATE TABLE observation
@@ -226,7 +248,7 @@ CREATE TABLE observation
     published_at            TIMESTAMP WITH TIME ZONE,
     geography_dimension_uid UUID                     REFERENCES geography_dimension (geography_dimension_uid) ON DELETE SET NULL,
     time_dimension_uid      UUID                     REFERENCES time_dimension (time_dimension_uid) ON DELETE SET NULL,
-    source_document_uid     UUID                     REFERENCES source_document (source_id) ON DELETE SET NULL
+    source_document_uid     UUID                     REFERENCES source_document (source_document_uid) ON DELETE SET NULL
 );
 
 CREATE INDEX idx_observation_indicator ON observation (indicator_uid);

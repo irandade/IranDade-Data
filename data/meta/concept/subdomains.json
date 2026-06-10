@@ -4,246 +4,352 @@
       "concept_uid": "019e871a-83b1-706c-b055-61523cd94cbe",
       "name": "تولید و رشد اقتصادی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-615381135f7c",
       "name": "بازار کار",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-615474e95dbe",
       "name": "درآمد، مصرف و رفاه اقتصادی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-61553bf9676f",
       "name": "فقر و نابرابری",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-61566b093458",
       "name": "قیمت‌ها و تورم",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-61576afd3355",
       "name": "پول و نقدینگی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-6158ec6c5db4",
+      "concept_uid": "019eb084-28e1-74b8-a225-a47c42d26f40",
       "name": "بانکداری و اعتبار",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-6159d73b48e9",
+      "concept_uid": "019eb084-28e1-74b8-a225-a47dc8ec3f5e",
       "name": "بازار سرمایه",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-615a0be99d6a",
+      "concept_uid": "019eb084-28e1-74b8-a225-a47e322408b0",
       "name": "ارز و تراز پرداخت‌ها",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-615bd3606bec",
+      "concept_uid": "019eb084-28e1-74b8-a225-a47f62b3677d",
       "name": "تجارت خارجی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-615c1dac4db1",
+      "concept_uid": "019eb084-28e1-74b8-a225-a4805fa0e87d",
       "name": "سرمایه‌گذاری",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-615d08d640f3",
+      "concept_uid": "019eb084-28e1-74b8-a225-a481b44efe11",
       "name": "مالیه عمومی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-615ea5cb7408",
       "name": "مالیات",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
-      "concept_uid": "019e871a-83b1-706c-b055-615fe7bca62c",
+      "concept_uid": "019eb084-28e1-74b8-a225-a482fd88364e",
       "name": "بخش‌های اقتصادی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6160a55abccd",
       "name": "اقتصاد منطقه‌ای",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538750f6238a",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-616147681dec",
       "name": "رفاه مادی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6162b0404d65",
       "name": "حمایت اجتماعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6163992c6b75",
       "name": "کیفیت زندگی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6164a98a783e",
       "name": "عدالت اجتماعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538848803f4e",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-6165eab2c428",
       "name": "ساختار جمعیت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-616632487441",
       "name": "پویایی جمعیت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6167a30f03b2",
       "name": "خانوار",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6168e28303b0",
       "name": "مهاجرت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-53899223f978",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-6169489894ab",
       "name": "سرمایه اجتماعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-616a0076fbc5",
       "name": "آسیب‌های اجتماعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-616bc6160478",
       "name": "مشارکت اجتماعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538a4da1a181",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-616c19b85bb0",
       "name": "آموزش عمومی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538b90ccd095"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538b90ccd095",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-616df5c6664c",
       "name": "آموزش عالی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538b90ccd095"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538b90ccd095",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-616ebb4e6f37",
       "name": "سلامت جمعیت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538c46372fae"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538c46372fae",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-616fa8791dd5",
       "name": "خدمات درمانی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538c46372fae"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538c46372fae",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-617083f7a1fb",
       "name": "پژوهش",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538df87375a8"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538df87375a8",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-617164bdf847",
       "name": "مهارت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-538df87375a8"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-538df87375a8",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
-
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-6173feabbae2",
       "name": "حمل‌ونقل",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-5390f7546dab"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-5390f7546dab",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-61749fa73d89",
       "name": "خدمات زیربنایی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-5390f7546dab"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-5390f7546dab",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-6175b65d2493",
       "name": "نفت",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6176248c7293",
       "name": "گاز",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-6177602a25d9",
       "name": "برق",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-539171ef6cc4",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
-
     {
       "concept_uid": "019e871a-83b1-706c-b055-61780cd15006",
       "name": "آب و منابع طبیعی",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-5392c83f01b7"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-5392c83f01b7",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     },
     {
       "concept_uid": "019e871a-83b1-706c-b055-61798d48e331",
       "name": "کیفیت محیط زیست",
       "level_type": "SDO",
-      "parent_concept_uid": "019e8718-5e78-76ca-b683-5392c83f01b7"
+      "parent_concept_uid": "019e8718-5e78-76ca-b683-5392c83f01b7",
+      "alt_name1": "",
+      "alt_name2": "",
+      "alt_name3": ""
     }
   ]
 }

@@ -13,7 +13,12 @@ except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "jsonschema"])
     from jsonschema import validate, ValidationError
 
-DATA_DIR = Path("data/meta")
+DATA_DIRS = [
+    Path("data/meta"),
+    Path("data/ontology"),
+    Path("data/source"),
+    Path("data/observation"),
+]
 SCHEMA_DIR = Path("schemas")
 
 schema_cache = {}
@@ -61,31 +66,25 @@ def validate_file(filepath: Path) -> bool:
     return all_pass
 
 def main():
-    meta_dirs = sorted(DATA_DIR.iterdir())
     total = 0
     passed = 0
     failed = 0
 
-    skip_files = {"data/meta/measurement_unit/economy_serries.json"}
-
-    for subdir in meta_dirs:
-        if not subdir.is_dir():
+    for data_dir in DATA_DIRS:
+        if not data_dir.is_dir():
             continue
-        for json_file in sorted(subdir.glob("*.json")):
-            rel = str(json_file)
-            if rel in skip_files:
-                print(f"\n{rel}")
-                print(f"  - SKIP (user requested)")
-                total += 1
+        for subdir in sorted(data_dir.iterdir()):
+            if not subdir.is_dir():
                 continue
-            rel = str(json_file)
-            print(f"\n{rel}")
-            total += 1
-            if validate_file(json_file):
-                print(f"  ✓ PASS")
-                passed += 1
-            else:
-                failed += 1
+            for json_file in sorted(subdir.glob("*.json")):
+                rel = str(json_file)
+                print(f"\n{rel}")
+                total += 1
+                if validate_file(json_file):
+                    print(f"  ✓ PASS")
+                    passed += 1
+                else:
+                    failed += 1
 
     print(f"\n{'='*40}")
     print(f"Total: {total}  Passed: {passed}  Failed: {failed}")
